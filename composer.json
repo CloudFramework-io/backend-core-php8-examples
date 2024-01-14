@@ -1,0 +1,5 @@
+{
+    "require": {
+        "cloudframework-io/backend-core-php8": "^8.1"
+    }
+}
