@@ -3,7 +3,8 @@
   "core.api.urls": ["/"],
 
   "--:ERP": "--- ERP Configuration ---",
-  "core.erp.platform_id": "",
+  "core.erp.platform_id": "academy",
+  "core.erp.user_id.academy": "tools@cloudframework.io",
 
   "--:GCP": "--- GCP CONFIGURATION ---",
   "core.gcp.project_id": "cloudframework-academy",

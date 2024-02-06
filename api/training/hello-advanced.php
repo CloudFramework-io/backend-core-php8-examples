@@ -1,7 +1,7 @@
 <?php
 /**
  * Basic structure for a CloudFramework API
- * last-update 2021-12
+ * last-update 2024-01
  * Author: CloudFramework.io
  */
 class API extends RESTful
@@ -13,7 +13,7 @@ class API extends RESTful
         if(!$this->checkMethod('GET,POST,PUT,DELETE')) return;
 
         //Call internal ENDPOINT_$end_point
-        $this->end_point = str_replace('-','_',$this->params[0] ?? 'default');
+        $this->end_point = str_replace('-','_',$this->params[1] ?? 'default');
         if(!$this->useFunction('ENDPOINT_'.$this->end_point)) {
             return($this->setErrorFromCodelib('params-error',"/{$this->service}/{$this->end_point} is not implemented"));
         }

@@ -56,21 +56,6 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/API.html#property_dbproxy"
         },                {
-            "fqsen": "\\API\u003A\u003AcheckAppSecurity\u0028\u0029",
-            "name": "checkAppSecurity",
-            "summary": "Check\u0020\u0024security\u0020match\u0020with\u0020user\u0020\u0024this\u002D\u003Edstoken_data\u005B\u0027User\u0027\u005D\u005B\u0027UserPrivileges\u0027\u005D,\u0020\u0024this\u002D\u003Edstoken_data\u005B\u0027User\u0027\u005D\u005B\u0027UserOrganizations\u0027\u005D\u0020or\u0020\u0024this\u002D\u003Edstoken_data\u005B\u0027User\u0027\u005D\u005B\u0027UserSuperAdmin\u0027\u005D",
-            "url": "classes/API.html#method_checkAppSecurity"
-        },                {
-            "fqsen": "\\API\u003A\u003AdbSettings\u0028\u0029",
-            "name": "dbSettings",
-            "summary": "Set\u0020DB\u0020parameter\u0020from\u0020the\u0020proxy",
-            "url": "classes/API.html#method_dbSettings"
-        },                {
-            "fqsen": "\\API\u003A\u003AsecureQuery\u0028\u0029",
-            "name": "secureQuery",
-            "summary": "Check\u0020if\u0020the\u0020query\u0020has\u0020any\u0020delete,\u0020trucate,\u0020drop\u0020etc..\u0020forbidden\u0020string",
-            "url": "classes/API.html#method_secureQuery"
-        },                {
             "fqsen": "\\API\u003A\u003A\u0024external_api",
             "name": "external_api",
             "summary": "",
@@ -221,50 +206,15 @@ Search.appendIndex(
             "summary": "Process\u0020File\u0020Uploads",
             "url": "classes/API.html#method_ENDPOINT_manageFiles"
         },                {
-            "fqsen": "\\API\u003A\u003A\u0024buckets",
-            "name": "buckets",
-            "summary": "",
-            "url": "classes/API.html#property_buckets"
-        },                {
             "fqsen": "\\API\u003A\u003AENDPOINT_basic\u0028\u0029",
             "name": "ENDPOINT_basic",
             "summary": "Endpoint\u0020to\u0020add\u0020a\u0020default\u0020feature.\u0020We\u0020suggest\u0020to\u0020use\u0020this\u0020endpoint\u0020to\u0020explain\nhow\u0020to\u0020use\u0020other\u0020endpoints",
             "url": "classes/API.html#method_ENDPOINT_basic"
         },                {
-            "fqsen": "\\API\u003A\u003Abasic_auth\u0028\u0029",
-            "name": "basic_auth",
-            "summary": "Execute\u0020a\u0020basic\u0020auth\nhow\u0020to\u0020use\u0020other\u0020endpoints",
-            "url": "classes/API.html#method_basic_auth"
-        },                {
-            "fqsen": "\\API\u003A\u003Abasic_check\u0028\u0029",
-            "name": "basic_check",
-            "summary": "Verify\u0020a\u0020token\u0020sent\u0020through\u0020X\u002DWEB\u002DKEY\u0020header\nhow\u0020to\u0020use\u0020other\u0020endpoints",
-            "url": "classes/API.html#method_basic_check"
-        },                {
-            "fqsen": "\\API\u003A\u003Abasic_logout\u0028\u0029",
-            "name": "basic_logout",
-            "summary": "Verify\u0020a\u0020token\u0020sent\u0020through\u0020X\u002DWEB\u002DKEY\u0020header\nhow\u0020to\u0020use\u0020other\u0020endpoints",
-            "url": "classes/API.html#method_basic_logout"
-        },                {
             "fqsen": "\\API\u003A\u003AENDPOINT_erp\u0028\u0029",
             "name": "ENDPOINT_erp",
             "summary": "Endpoint\u0020to\u0020add\u0020a\u0020default\u0020feature.\u0020We\u0020suggest\u0020to\u0020use\u0020this\u0020endpoint\u0020to\u0020explain\nhow\u0020to\u0020use\u0020other\u0020endpoints",
             "url": "classes/API.html#method_ENDPOINT_erp"
-        },                {
-            "fqsen": "\\API\u003A\u003Aerp_auth\u0028\u0029",
-            "name": "erp_auth",
-            "summary": "Execute\u0020a\u0020basic\u0020auth\nhow\u0020to\u0020use\u0020other\u0020endpoints",
-            "url": "classes/API.html#method_erp_auth"
-        },                {
-            "fqsen": "\\API\u003A\u003Aerp_check\u0028\u0029",
-            "name": "erp_check",
-            "summary": "Verify\u0020a\u0020ERP\u0020token\u0020sent\u0020through\u0020headers\u0020\u0020X\u002DDS\u002DTOKEN\u0020and\u0020X\u002DEXTRA\u002DINFO\nhow\u0020to\u0020use\u0020other\u0020endpoints",
-            "url": "classes/API.html#method_erp_check"
-        },                {
-            "fqsen": "\\API\u003A\u003Aerp_logout\u0028\u0029",
-            "name": "erp_logout",
-            "summary": "Verify\u0020a\u0020token\u0020sent\u0020through\u0020X\u002DWEB\u002DKEY\u0020header\nhow\u0020to\u0020use\u0020other\u0020endpoints",
-            "url": "classes/API.html#method_erp_logout"
         },                {
             "fqsen": "\\API\u003A\u003A\u0024basic_user",
             "name": "basic_user",
@@ -480,11 +430,6 @@ Search.appendIndex(
             "name": "getJSON",
             "summary": "Return\u0020the\u0020CFA\u0020structure\u0020\u0024this\u002D\u003Edata",
             "url": "classes/CFA.html#method_getJSON"
-        },                {
-            "fqsen": "\\CFA\u003A\u003A\u0024core",
-            "name": "core",
-            "summary": "",
-            "url": "classes/CFA.html#property_core"
         },                {
             "fqsen": "\\CFA\u003A\u003A\u0024data",
             "name": "data",
@@ -2151,11 +2096,6 @@ Search.appendIndex(
             "summary": "Change\u0020title\u0020of\u0020the\u0020App",
             "url": "classes/CFI.html#method_addTab"
         },                {
-            "fqsen": "\\CFI\u003A\u003AgetField\u0028\u0029",
-            "name": "getField",
-            "summary": "",
-            "url": "classes/CFI.html#method_getField"
-        },                {
             "fqsen": "\\CFI\u003A\u003Afield\u0028\u0029",
             "name": "field",
             "summary": "Return\u0020a\u0020CFIField\u0020field",
@@ -2165,11 +2105,6 @@ Search.appendIndex(
             "name": "delete",
             "summary": "Delete\u0020a\u0020field",
             "url": "classes/CFI.html#method_delete"
-        },                {
-            "fqsen": "\\CFI\u003A\u003AgetButton\u0028\u0029",
-            "name": "getButton",
-            "summary": "Internal\u0020method\u0020to\u0020return\u0020a\u0020button",
-            "url": "classes/CFI.html#method_getButton"
         },                {
             "fqsen": "\\CFI\u003A\u003Abutton\u0028\u0029",
             "name": "button",
@@ -2190,26 +2125,6 @@ Search.appendIndex(
             "name": "changeFieldsToDisabled",
             "summary": "Change\u0020All\u0020the\u0020fields\u0020fields\u0020to\u0020readonly",
             "url": "classes/CFI.html#method_changeFieldsToDisabled"
-        },                {
-            "fqsen": "\\CFI\u003A\u003A\u0024version",
-            "name": "version",
-            "summary": "",
-            "url": "classes/CFI.html#property_version"
-        },                {
-            "fqsen": "\\CFI\u003A\u003A\u0024core",
-            "name": "core",
-            "summary": "",
-            "url": "classes/CFI.html#property_core"
-        },                {
-            "fqsen": "\\CFI\u003A\u003A\u0024fields",
-            "name": "fields",
-            "summary": "",
-            "url": "classes/CFI.html#property_fields"
-        },                {
-            "fqsen": "\\CFI\u003A\u003A\u0024buttons",
-            "name": "buttons",
-            "summary": "",
-            "url": "classes/CFI.html#property_buttons"
         },                {
             "fqsen": "\\CFI\u003A\u003A\u0024json_object",
             "name": "json_object",
@@ -2346,16 +2261,6 @@ Search.appendIndex(
             "summary": "Set\u0020a\u0020header\u0020before\u0020de\u0020field\u0020for\u0020a\u0020better\u0020structure\u0020of\u0020the\u0020information.",
             "url": "classes/CFIField.html#method_cfo"
         },                {
-            "fqsen": "\\CFIField\u003A\u003A\u0024cfi",
-            "name": "cfi",
-            "summary": "",
-            "url": "classes/CFIField.html#property_cfi"
-        },                {
-            "fqsen": "\\CFIField\u003A\u003A\u0024field",
-            "name": "field",
-            "summary": "",
-            "url": "classes/CFIField.html#property_field"
-        },                {
             "fqsen": "\\CFIButton",
             "name": "CFIButton",
             "summary": "",
@@ -2405,16 +2310,6 @@ Search.appendIndex(
             "name": "formUrl",
             "summary": "Assign\u0020url\u0020to\u0020call\u0020an\u0020external\u0020API\u0020without\u0020avoiding\u0020the\u0020form\u0020sending",
             "url": "classes/CFIButton.html#method_formUrl"
-        },                {
-            "fqsen": "\\CFIButton\u003A\u003A\u0024cfi",
-            "name": "cfi",
-            "summary": "",
-            "url": "classes/CFIButton.html#property_cfi"
-        },                {
-            "fqsen": "\\CFIButton\u003A\u003A\u0024button",
-            "name": "button",
-            "summary": "",
-            "url": "classes/CFIButton.html#property_button"
         },                {
             "fqsen": "\\CFOs",
             "name": "CFOs",
@@ -2666,11 +2561,6 @@ Search.appendIndex(
             "summary": "Set\u0020ConfigVars\u0020for\u0020connection",
             "url": "classes/CloudPostgreSQL.html#method_setConfiVars"
         },                {
-            "fqsen": "\\CloudPostgreSQL\u003A\u003A_buildQuery\u0028\u0029",
-            "name": "_buildQuery",
-            "summary": "Build\u0020a\u0020Query\u0020receiving\u0020a\u0020string\u0020with\u0020\u0025s\u0020as\u0020first\u0020parameter\u0020and\u0020an\u0020array\u0020of\u0020values\u0020as\u0020second\u0020paramater",
-            "url": "classes/CloudPostgreSQL.html#method__buildQuery"
-        },                {
             "fqsen": "\\CloudPostgreSQL\u003A\u003AjoinQueryValues\u0028\u0029",
             "name": "joinQueryValues",
             "summary": "Join\u0020\u0024values\u0020array\u0020with\u0020\u0024q\u0020string\u0020wich\u0020contains\u0020\u0025s\u0020elements",
@@ -2860,16 +2750,6 @@ Search.appendIndex(
             "name": "_onlyCreateQuery",
             "summary": "",
             "url": "classes/CloudPostgreSQL.html#property__onlyCreateQuery"
-        },                {
-            "fqsen": "\\CloudPostgreSQL\u003A\u003A\u0024core",
-            "name": "core",
-            "summary": "",
-            "url": "classes/CloudPostgreSQL.html#property_core"
-        },                {
-            "fqsen": "\\CloudPostgreSQL\u003A\u003A\u0024_dblink",
-            "name": "_dblink",
-            "summary": "",
-            "url": "classes/CloudPostgreSQL.html#property__dblink"
         },                {
             "fqsen": "\\CloudPostgreSQL\u003A\u003A\u0024_debug",
             "name": "_debug",
@@ -3341,16 +3221,6 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/CloudSQL.html#property__onlyCreateQuery"
         },                {
-            "fqsen": "\\CloudSQL\u003A\u003A\u0024core",
-            "name": "core",
-            "summary": "",
-            "url": "classes/CloudSQL.html#property_core"
-        },                {
-            "fqsen": "\\CloudSQL\u003A\u003A\u0024_dblink",
-            "name": "_dblink",
-            "summary": "",
-            "url": "classes/CloudSQL.html#property__dblink"
-        },                {
             "fqsen": "\\CloudSQL\u003A\u003A\u0024_debug",
             "name": "_debug",
             "summary": "",
@@ -3370,11 +3240,6 @@ Search.appendIndex(
             "name": "__construct",
             "summary": "",
             "url": "classes/DataBQ.html#method___construct"
-        },                {
-            "fqsen": "\\DataBQ\u003A\u003AprocessSchema\u0028\u0029",
-            "name": "processSchema",
-            "summary": "Process\u0020Schema",
-            "url": "classes/DataBQ.html#method_processSchema"
         },                {
             "fqsen": "\\DataBQ\u003A\u003Atest\u0028\u0029",
             "name": "test",
@@ -3425,16 +3290,6 @@ Search.appendIndex(
             "name": "dbFeed",
             "summary": "Feed\u0020a\u0020table\u0020in\u0020Bigquery",
             "url": "classes/DataBQ.html#method_dbFeed"
-        },                {
-            "fqsen": "\\DataBQ\u003A\u003A_feed\u0028\u0029",
-            "name": "_feed",
-            "summary": "Feed\u0020a\u0020table\u0020with\u0020\u0024data",
-            "url": "classes/DataBQ.html#method__feed"
-        },                {
-            "fqsen": "\\DataBQ\u003A\u003A_query\u0028\u0029",
-            "name": "_query",
-            "summary": "Execute\u0020a\u0020query\u0020in\u0020BigQuery",
-            "url": "classes/DataBQ.html#method__query"
         },                {
             "fqsen": "\\DataBQ\u003A\u003Areset\u0028\u0029",
             "name": "reset",
@@ -3731,11 +3586,6 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/DataBQ.html#property_mapping"
         },                {
-            "fqsen": "\\DataBQ\u003A\u003A\u0024use_mapping",
-            "name": "use_mapping",
-            "summary": "",
-            "url": "classes/DataBQ.html#property_use_mapping"
-        },                {
             "fqsen": "\\DataBQ\u003A\u003A\u0024limit",
             "name": "limit",
             "summary": "",
@@ -3780,41 +3630,6 @@ Search.appendIndex(
             "name": "debug",
             "summary": "",
             "url": "classes/DataBQ.html#property_debug"
-        },                {
-            "fqsen": "\\DataBQ\u003A\u003A\u0024joins",
-            "name": "joins",
-            "summary": "",
-            "url": "classes/DataBQ.html#property_joins"
-        },                {
-            "fqsen": "\\DataBQ\u003A\u003A\u0024queryFields",
-            "name": "queryFields",
-            "summary": "",
-            "url": "classes/DataBQ.html#property_queryFields"
-        },                {
-            "fqsen": "\\DataBQ\u003A\u003A\u0024queryWhere",
-            "name": "queryWhere",
-            "summary": "",
-            "url": "classes/DataBQ.html#property_queryWhere"
-        },                {
-            "fqsen": "\\DataBQ\u003A\u003A\u0024extraWhere",
-            "name": "extraWhere",
-            "summary": "",
-            "url": "classes/DataBQ.html#property_extraWhere"
-        },                {
-            "fqsen": "\\DataBQ\u003A\u003A\u0024virtualFields",
-            "name": "virtualFields",
-            "summary": "",
-            "url": "classes/DataBQ.html#property_virtualFields"
-        },                {
-            "fqsen": "\\DataBQ\u003A\u003A\u0024groupBy",
-            "name": "groupBy",
-            "summary": "",
-            "url": "classes/DataBQ.html#property_groupBy"
-        },                {
-            "fqsen": "\\DataBQ\u003A\u003A\u0024view",
-            "name": "view",
-            "summary": "",
-            "url": "classes/DataBQ.html#property_view"
         },                {
             "fqsen": "\\_MONGODB_CLASS_",
             "name": "_MONGODB_CLASS_",
@@ -3886,30 +3701,10 @@ Search.appendIndex(
             "summary": "Execute\u0020a\u0020deletion\u0020based\u0020on\u0020id\nhttps\u003A\/\/docs.mongodb.com\/php\u002Dlibrary\/current\/reference\/method\/MongoDBCollection\u002DdeleteOne\/",
             "url": "classes/DataMongoDB.html#method_deleteById"
         },                {
-            "fqsen": "\\DataMongoDB\u003A\u003AprepareTypes\u0028\u0029",
-            "name": "prepareTypes",
-            "summary": "Transform\u0020_id\u0020fields\u0020and\u0020date\u0020contents\u0020into\u0020MongoDB\u0020objects",
-            "url": "classes/DataMongoDB.html#method_prepareTypes"
-        },                {
-            "fqsen": "\\DataMongoDB\u003A\u003AtransformTypes\u0028\u0029",
-            "name": "transformTypes",
-            "summary": "Transform\u0020Mongo\u0020objects\u0020in\u0020arrays,\u0020strings\u0020,\u0020numbers",
-            "url": "classes/DataMongoDB.html#method_transformTypes"
-        },                {
-            "fqsen": "\\DataMongoDB\u003A\u003AconnectWithCollection\u0028\u0029",
-            "name": "connectWithCollection",
-            "summary": "Return\u0020a\u0020Collection\u0020to\u0020operate\u0020with",
-            "url": "classes/DataMongoDB.html#method_connectWithCollection"
-        },                {
             "fqsen": "\\DataMongoDB\u003A\u003AaddError\u0028\u0029",
             "name": "addError",
             "summary": "Error\u0020Functions",
             "url": "classes/DataMongoDB.html#method_addError"
-        },                {
-            "fqsen": "\\DataMongoDB\u003A\u003A\u0024core",
-            "name": "core",
-            "summary": "",
-            "url": "classes/DataMongoDB.html#property_core"
         },                {
             "fqsen": "\\DataMongoDB\u003A\u003A\u0024error",
             "name": "error",
@@ -3920,11 +3715,6 @@ Search.appendIndex(
             "name": "errorMsg",
             "summary": "",
             "url": "classes/DataMongoDB.html#property_errorMsg"
-        },                {
-            "fqsen": "\\DataMongoDB\u003A\u003A\u0024_client",
-            "name": "_client",
-            "summary": "",
-            "url": "classes/DataMongoDB.html#property__client"
         },                {
             "fqsen": "\\DataMongoDB\u003A\u003A\u0024uri",
             "name": "uri",
@@ -4071,16 +3861,6 @@ Search.appendIndex(
             "summary": "Delete\u0020a\u0020record\u0020in\u0020db",
             "url": "classes/DataSQL.html#method_delete"
         },                {
-            "fqsen": "\\DataSQL\u003A\u003AconvertDateFieldsToWriteValuesIntoTimeZoneValues\u0028\u0029",
-            "name": "convertDateFieldsToWriteValuesIntoTimeZoneValues",
-            "summary": "Convert\u0020\u0022now\u0022\u0020values\u0020in\u0020\u005B\u0027date\u0027,\u0027datetime\u0027,\u0027timestamp\u0027\u005D\u0020into\u0020TimeZoneValue\u0020before\u0020to\u0020update\u0020or\u0020insert",
-            "url": "classes/DataSQL.html#method_convertDateFieldsToWriteValuesIntoTimeZoneValues"
-        },                {
-            "fqsen": "\\DataSQL\u003A\u003AconvertDateFieldsReadValuesIntoTimeZoneValues\u0028\u0029",
-            "name": "convertDateFieldsReadValuesIntoTimeZoneValues",
-            "summary": "Convert\u0020\u0022now\u0022\u0020values\u0020in\u0020\u005B\u0027date\u0027,\u0027datetime\u0027,\u0027timestamp\u0027\u005D\u0020into\u0020TimeZoneValue",
-            "url": "classes/DataSQL.html#method_convertDateFieldsReadValuesIntoTimeZoneValues"
-        },                {
             "fqsen": "\\DataSQL\u003A\u003AunsetOrder\u0028\u0029",
             "name": "unsetOrder",
             "summary": "About\u0020Order",
@@ -4216,11 +3996,6 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/DataSQL.html#property_mapping"
         },                {
-            "fqsen": "\\DataSQL\u003A\u003A\u0024use_mapping",
-            "name": "use_mapping",
-            "summary": "",
-            "url": "classes/DataSQL.html#property_use_mapping"
-        },                {
             "fqsen": "\\DataSQL\u003A\u003A\u0024limit",
             "name": "limit",
             "summary": "",
@@ -4266,41 +4041,6 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/DataSQL.html#property_default_time_zone_to_write"
         },                {
-            "fqsen": "\\DataSQL\u003A\u003A\u0024joins",
-            "name": "joins",
-            "summary": "",
-            "url": "classes/DataSQL.html#property_joins"
-        },                {
-            "fqsen": "\\DataSQL\u003A\u003A\u0024queryFields",
-            "name": "queryFields",
-            "summary": "",
-            "url": "classes/DataSQL.html#property_queryFields"
-        },                {
-            "fqsen": "\\DataSQL\u003A\u003A\u0024queryWhere",
-            "name": "queryWhere",
-            "summary": "",
-            "url": "classes/DataSQL.html#property_queryWhere"
-        },                {
-            "fqsen": "\\DataSQL\u003A\u003A\u0024extraWhere",
-            "name": "extraWhere",
-            "summary": "",
-            "url": "classes/DataSQL.html#property_extraWhere"
-        },                {
-            "fqsen": "\\DataSQL\u003A\u003A\u0024virtualFields",
-            "name": "virtualFields",
-            "summary": "",
-            "url": "classes/DataSQL.html#property_virtualFields"
-        },                {
-            "fqsen": "\\DataSQL\u003A\u003A\u0024groupBy",
-            "name": "groupBy",
-            "summary": "",
-            "url": "classes/DataSQL.html#property_groupBy"
-        },                {
-            "fqsen": "\\DataSQL\u003A\u003A\u0024view",
-            "name": "view",
-            "summary": "",
-            "url": "classes/DataSQL.html#property_view"
-        },                {
             "fqsen": "\\_DATASTORECLIENT_CLASS_",
             "name": "_DATASTORECLIENT_CLASS_",
             "summary": "",
@@ -4330,11 +4070,6 @@ Search.appendIndex(
             "name": "createEntities",
             "summary": "Creating\u0020\u0020entities\u0020based\u0020in\u0020the\u0020schema",
             "url": "classes/DataStore.html#method_createEntities"
-        },                {
-            "fqsen": "\\DataStore\u003A\u003AloadSchema\u0028\u0029",
-            "name": "loadSchema",
-            "summary": "Return\u0020array\u0020with\u0020the\u0020schema\nformat\u003A\n\u007B\u0020\u0022field1\u0022\u003A\u005B\u0022type\u0022\u0028,\u0022index\u007C..other\u0020validations\u0022\u0029\u005D\n\u007B\u0020\u0022field2\u0022\u003A\u005B\u0022type\u0022\u0028,\u0022index\u007C..other\u0020validations\u0022\u0029\u005D",
-            "url": "classes/DataStore.html#method_loadSchema"
         },                {
             "fqsen": "\\DataStore\u003A\u003AgetEntityTemplate\u0028\u0029",
             "name": "getEntityTemplate",
@@ -4385,11 +4120,6 @@ Search.appendIndex(
             "name": "fetchOneByKey",
             "summary": "Return\u0020entities\u0020by\u0020key",
             "url": "classes/DataStore.html#method_fetchOneByKey"
-        },                {
-            "fqsen": "\\DataStore\u003A\u003AtransformResult\u0028\u0029",
-            "name": "transformResult",
-            "summary": "Transform\u0020Result\u0020of\u0020a\u0020query",
-            "url": "classes/DataStore.html#method_transformResult"
         },                {
             "fqsen": "\\DataStore\u003A\u003Asum\u0028\u0029",
             "name": "sum",
@@ -4445,16 +4175,6 @@ Search.appendIndex(
             "name": "addError",
             "summary": "Add\u0020an\u0020error\u0020in\u0020the\u0020class",
             "url": "classes/DataStore.html#method_addError"
-        },                {
-            "fqsen": "\\DataStore\u003A\u003A\u0024_version",
-            "name": "_version",
-            "summary": "",
-            "url": "classes/DataStore.html#property__version"
-        },                {
-            "fqsen": "\\DataStore\u003A\u003A\u0024core",
-            "name": "core",
-            "summary": "",
-            "url": "classes/DataStore.html#property_core"
         },                {
             "fqsen": "\\DataStore\u003A\u003A\u0024datastore",
             "name": "datastore",
@@ -4666,11 +4386,6 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/DataValidation.html#method_validateName"
         },                {
-            "fqsen": "\\DataValidation\u003A\u003AextractOptionValue\u0028\u0029",
-            "name": "extractOptionValue",
-            "summary": "",
-            "url": "classes/DataValidation.html#method_extractOptionValue"
-        },                {
             "fqsen": "\\DataValidation\u003A\u003A\u0024field",
             "name": "field",
             "summary": "",
@@ -4856,16 +4571,6 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/SendGrid.html#method___construct"
         },                {
-            "fqsen": "\\SendGrid\u003A\u003A_prepMessageData\u0028\u0029",
-            "name": "_prepMessageData",
-            "summary": "_prepMessageData\nTakes\u0020the\u0020mail\u0020message\u0020and\u0020returns\u0020a\u0020url\u0020friendly\u0020querystring",
-            "url": "classes/SendGrid.html#method__prepMessageData"
-        },                {
-            "fqsen": "\\SendGrid\u003A\u003A_arrayToUrlPart\u0028\u0029",
-            "name": "_arrayToUrlPart",
-            "summary": "_arrayToUrlPart\nConverts\u0020an\u0020array\u0020to\u0020a\u0020url\u0020friendly\u0020string",
-            "url": "classes/SendGrid.html#method__arrayToUrlPart"
-        },                {
             "fqsen": "\\SendGrid\u003A\u003Asend\u0028\u0029",
             "name": "send",
             "summary": "send\nSend\u0020an\u0020email",
@@ -4876,31 +4581,6 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/SendGrid.html#constant_VERSION"
         },                {
-            "fqsen": "\\SendGrid\u003A\u003A\u0024namespace",
-            "name": "namespace",
-            "summary": "",
-            "url": "classes/SendGrid.html#property_namespace"
-        },                {
-            "fqsen": "\\SendGrid\u003A\u003A\u0024domain",
-            "name": "domain",
-            "summary": "",
-            "url": "classes/SendGrid.html#property_domain"
-        },                {
-            "fqsen": "\\SendGrid\u003A\u003A\u0024endpoint",
-            "name": "endpoint",
-            "summary": "",
-            "url": "classes/SendGrid.html#property_endpoint"
-        },                {
-            "fqsen": "\\SendGrid\u003A\u003A\u0024username",
-            "name": "username",
-            "summary": "",
-            "url": "classes/SendGrid.html#property_username"
-        },                {
-            "fqsen": "\\SendGrid\u003A\u003A\u0024password",
-            "name": "password",
-            "summary": "",
-            "url": "classes/SendGrid.html#property_password"
-        },                {
             "fqsen": "\\SendGridMail",
             "name": "SendGridMail",
             "summary": "",
@@ -4910,11 +4590,6 @@ Search.appendIndex(
             "name": "__construct",
             "summary": "",
             "url": "classes/SendGridMail.html#method___construct"
-        },                {
-            "fqsen": "\\SendGridMail\u003A\u003A_removeFromList\u0028\u0029",
-            "name": "_removeFromList",
-            "summary": "_removeFromList\nGiven\u0020a\u0020list\u0020of\u0020key\/value\u0020pairs,\u0020removes\u0020the\u0020associated\u0020keys\nwhere\u0020a\u0020value\u0020matches\u0020the\u0020given\u0020string\u0020\u0028\u0024item\u0029",
-            "url": "classes/SendGridMail.html#method__removeFromList"
         },                {
             "fqsen": "\\SendGridMail\u003A\u003AgetTos\u0028\u0029",
             "name": "getTos",
@@ -5076,11 +4751,6 @@ Search.appendIndex(
             "summary": "removeAttachment\nRemove\u0020a\u0020previously\u0020added\u0020file\u0020attachment,\u0020given\u0020the\u0020file\u0020name.",
             "url": "classes/SendGridMail.html#method_removeAttachment"
         },                {
-            "fqsen": "\\SendGridMail\u003A\u003A_getAttachmentInfo\u0028\u0029",
-            "name": "_getAttachmentInfo",
-            "summary": "get\u0020file\u0020details",
-            "url": "classes/SendGridMail.html#method__getAttachmentInfo"
-        },                {
             "fqsen": "\\SendGridMail\u003A\u003AsetCategories\u0028\u0029",
             "name": "setCategories",
             "summary": "setCategories\nSet\u0020the\u0020list\u0020of\u0020category\u0020headers\ndestroys\u0020previous\u0020category\u0020header\u0020data",
@@ -5176,76 +4846,6 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/SendGridMail.html#method_setRecipientsInHeader"
         },                {
-            "fqsen": "\\SendGridMail\u003A\u003A_isHeadersRequired\u0028\u0029",
-            "name": "_isHeadersRequired",
-            "summary": "isHeaderRequired\ndetermines\u0020whether\u0020or\u0020not\u0020we\u0020need\u0020to\u0020force\u0020recipients\u0020through\u0020the\u0020smtpapi\u0020headers",
-            "url": "classes/SendGridMail.html#method__isHeadersRequired"
-        },                {
-            "fqsen": "\\SendGridMail\u003A\u003A_preferNotToUseHeaders\u0028\u0029",
-            "name": "_preferNotToUseHeaders",
-            "summary": "_preferNotToUseHeaders\nThere\u0020are\u0020certain\u0020cases\u0020in\u0020which\u0020headers\u0020are\u0020not\u0020a\u0020preferred\u0020choice\nto\u0020send\u0020email,\u0020as\u0020it\u0020limits\u0020some\u0020basic\u0020email\u0020functionality.\u0020Here,\u0020we\ncheck\u0020for\u0020any\u0020of\u0020those\u0020rules,\u0020and\u0020add\u0020them\u0020in\u0020to\u0020decide\u0020whether\u0020or\nnot\u0020to\u0020use\u0020headers",
-            "url": "classes/SendGridMail.html#method__preferNotToUseHeaders"
-        },                {
-            "fqsen": "\\SendGridMail\u003A\u003A\u0024to_list",
-            "name": "to_list",
-            "summary": "",
-            "url": "classes/SendGridMail.html#property_to_list"
-        },                {
-            "fqsen": "\\SendGridMail\u003A\u003A\u0024from",
-            "name": "from",
-            "summary": "",
-            "url": "classes/SendGridMail.html#property_from"
-        },                {
-            "fqsen": "\\SendGridMail\u003A\u003A\u0024from_name",
-            "name": "from_name",
-            "summary": "",
-            "url": "classes/SendGridMail.html#property_from_name"
-        },                {
-            "fqsen": "\\SendGridMail\u003A\u003A\u0024reply_to",
-            "name": "reply_to",
-            "summary": "",
-            "url": "classes/SendGridMail.html#property_reply_to"
-        },                {
-            "fqsen": "\\SendGridMail\u003A\u003A\u0024cc_list",
-            "name": "cc_list",
-            "summary": "",
-            "url": "classes/SendGridMail.html#property_cc_list"
-        },                {
-            "fqsen": "\\SendGridMail\u003A\u003A\u0024bcc_list",
-            "name": "bcc_list",
-            "summary": "",
-            "url": "classes/SendGridMail.html#property_bcc_list"
-        },                {
-            "fqsen": "\\SendGridMail\u003A\u003A\u0024subject",
-            "name": "subject",
-            "summary": "",
-            "url": "classes/SendGridMail.html#property_subject"
-        },                {
-            "fqsen": "\\SendGridMail\u003A\u003A\u0024text",
-            "name": "text",
-            "summary": "",
-            "url": "classes/SendGridMail.html#property_text"
-        },                {
-            "fqsen": "\\SendGridMail\u003A\u003A\u0024html",
-            "name": "html",
-            "summary": "",
-            "url": "classes/SendGridMail.html#property_html"
-        },                {
-            "fqsen": "\\SendGridMail\u003A\u003A\u0024attachment_list",
-            "name": "attachment_list",
-            "summary": "",
-            "url": "classes/SendGridMail.html#property_attachment_list"
-        },                {
-            "fqsen": "\\SendGridMail\u003A\u003A\u0024header_list",
-            "name": "header_list",
-            "summary": "",
-            "url": "classes/SendGridMail.html#property_header_list"
-        },                {
-            "fqsen": "\\SendGridMail\u003A\u003A\u0024use_headers",
-            "name": "use_headers",
-            "summary": "",
-            "url": "classes/SendGridMail.html#property_use_headers"
-        },                {
             "fqsen": "\\_Facebook_CLASS_",
             "name": "_Facebook_CLASS_",
             "summary": "",
@@ -5300,11 +4900,6 @@ Search.appendIndex(
             "name": "addError",
             "summary": "",
             "url": "classes/Facebook.html#method_addError"
-        },                {
-            "fqsen": "\\Facebook\u003A\u003A\u0024core",
-            "name": "core",
-            "summary": "",
-            "url": "classes/Facebook.html#property_core"
         },                {
             "fqsen": "\\Facebook\u003A\u003A\u0024error",
             "name": "error",
@@ -5371,11 +4966,6 @@ Search.appendIndex(
             "summary": "Sets\u0020Base\u0020URI,\u0020ex\u003A\u0020http\u003A\/\/yourcompany.firebase.com\/youruser",
             "url": "classes/Firebase.html#method_setBaseURI"
         },                {
-            "fqsen": "\\Firebase\u003A\u003A_getJsonPath\u0028\u0029",
-            "name": "_getJsonPath",
-            "summary": "Returns\u0020with\u0020the\u0020normalized\u0020JSON\u0020absolute\u0020path",
-            "url": "classes/Firebase.html#method__getJsonPath"
-        },                {
             "fqsen": "\\Firebase\u003A\u003AsetTimeOut\u0028\u0029",
             "name": "setTimeOut",
             "summary": "Sets\u0020REST\u0020call\u0020timeout\u0020in\u0020seconds",
@@ -5405,46 +4995,6 @@ Search.appendIndex(
             "name": "delete",
             "summary": "Deletes\u0020data\u0020from\u0020Firebase\nHTTP\u0020204\u003A\u0020Ok",
             "url": "classes/Firebase.html#method_delete"
-        },                {
-            "fqsen": "\\Firebase\u003A\u003A_getCurlHandler\u0028\u0029",
-            "name": "_getCurlHandler",
-            "summary": "Returns\u0020with\u0020Initialized\u0020CURL\u0020Handler",
-            "url": "classes/Firebase.html#method__getCurlHandler"
-        },                {
-            "fqsen": "\\Firebase\u003A\u003A_writeData\u0028\u0029",
-            "name": "_writeData",
-            "summary": "",
-            "url": "classes/Firebase.html#method__writeData"
-        },                {
-            "fqsen": "\\Firebase\u003A\u003AaddError\u0028\u0029",
-            "name": "addError",
-            "summary": "",
-            "url": "classes/Firebase.html#method_addError"
-        },                {
-            "fqsen": "\\Firebase\u003A\u003A\u0024_baseURI",
-            "name": "_baseURI",
-            "summary": "",
-            "url": "classes/Firebase.html#property__baseURI"
-        },                {
-            "fqsen": "\\Firebase\u003A\u003A\u0024_timeout",
-            "name": "_timeout",
-            "summary": "",
-            "url": "classes/Firebase.html#property__timeout"
-        },                {
-            "fqsen": "\\Firebase\u003A\u003A\u0024_token",
-            "name": "_token",
-            "summary": "",
-            "url": "classes/Firebase.html#property__token"
-        },                {
-            "fqsen": "\\Firebase\u003A\u003A\u0024_curlHandler",
-            "name": "_curlHandler",
-            "summary": "",
-            "url": "classes/Firebase.html#property__curlHandler"
-        },                {
-            "fqsen": "\\Firebase\u003A\u003A\u0024core",
-            "name": "core",
-            "summary": "",
-            "url": "classes/Firebase.html#property_core"
         },                {
             "fqsen": "\\Firebase\u003A\u003A\u0024error",
             "name": "error",
@@ -5571,20 +5121,10 @@ Search.appendIndex(
             "summary": "Export\u0020a\u0020file\nhttps\u003A\/\/developers.google.com\/drive\/api\/guides\/manage\u002Ddownloads\nhttps\u003A\/\/developers.google.com\/drive\/api\/guides\/ref\u002Dexport\u002Dformats\nDocuments\nMicrosoft\u0020Word\tapplication\/vnd.openxmlformats\u002Dofficedocument.wordprocessingml.document\t.docx\nOpenDocument\tapplication\/vnd.oasis.opendocument.text\t.odt\nRich\u0020Text\tapplication\/rtf\t.rtf\nPDF\tapplication\/pdf\t.pdf\nPlain\u0020Text\ttext\/plain\t.txt\nWeb\u0020Page\u0020\u0028HTML\u0029\tapplication\/zip\t.zip\nEPUB\tapplication\/epub\u002Bzip\t.epub\nSpreadsheets\nMicrosoft\u0020Excel\tapplication\/vnd.openxmlformats\u002Dofficedocument.spreadsheetml.sheet\t.xlsx\nOpenDocument\tapplication\/x\u002Dvnd.oasis.opendocument.spreadsheet\t.ods\nPDF\tapplication\/pdf\t.pdf\nWeb\u0020Page\u0020\u0028HTML\u0029\tapplication\/zip\t.zip\nComma\u0020Separated\u0020Values\u0020\u0028first\u002Dsheet\u0020only\u0029\ttext\/csv\t.csv\nTab\u0020Separated\u0020Values\u0020\u0028first\u002Dsheet\u0020only\u0029\ttext\/tab\u002Dseparated\u002Dvalues\t.tsv\nPresentations\nMicrosoft\u0020PowerPoint\tapplication\/vnd.openxmlformats\u002Dofficedocument.presentationml.presentation\t.pptx\nODP\tapplication\/vnd.oasis.opendocument.presentation\t.odp\nPDF\tapplication\/pdf\t.pdf\nPlain\u0020Text\ttext\/plain\t.txt\nJPEG\u0020\u0028first\u002Dslide\u0020only\u0029\timage\/jpeg\t.jpg\nPNG\u0020\u0028first\u002Dslide\u0020only\u0029\timage\/png\t.png\nScalable\u0020Vector\u0020Graphics\u0020\u0028first\u002Dslide\u0020only\u0029\timage\/svg\u002Bxml\t.svg\nDrawings\nPDF\tapplication\/pdf\t.pdf\nJPEG\timage\/jpeg\t.jpg\nPNG\timage\/png\t.png\nScalable\u0020Vector\u0020Graphics\timage\/svg\u002Bxml\t.svg\nApps\nScript\tJSON\tapplication\/vnd.google\u002Dapps.script\u002Bjson\t.json",
             "url": "classes/GoogleDrive.html#method_export"
         },                {
-            "fqsen": "\\GoogleDrive\u003A\u003AgetArrayFromDriveFile\u0028\u0029",
-            "name": "getArrayFromDriveFile",
-            "summary": "Return\u0020an\u0020array\u0020structured\u0020taking\u0020a\u0020DriveFile",
-            "url": "classes/GoogleDrive.html#method_getArrayFromDriveFile"
-        },                {
             "fqsen": "\\GoogleDrive\u003A\u003AcreateDriveFolderStructure\u0028\u0029",
             "name": "createDriveFolderStructure",
             "summary": "Creat\u0020and\u0020Drive\u0020structure\u0020based\u0020on\u0020\u0024structure",
             "url": "classes/GoogleDrive.html#method_createDriveFolderStructure"
-        },                {
-            "fqsen": "\\GoogleDrive\u003A\u003AgetDriveFolderRecursiveStructure\u0028\u0029",
-            "name": "getDriveFolderRecursiveStructure",
-            "summary": "Create\u0020under\u0020\u0024parent\u0020drive\u0020folder\u0020the\u0020structure\u0020defined\u0020in\u0020\u0024structure",
-            "url": "classes/GoogleDrive.html#method_getDriveFolderRecursiveStructure"
         },                {
             "fqsen": "\\GoogleDrive\u003A\u003AsearchDriveFiles\u0028\u0029",
             "name": "searchDriveFiles",
@@ -5606,11 +5146,6 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/GoogleDrive.html#method_getSharedDriveInfo"
         },                {
-            "fqsen": "\\GoogleDrive\u003A\u003AgetUrlFromMimeType\u0028\u0029",
-            "name": "getUrlFromMimeType",
-            "summary": "Return\u0020the\u0020URL\u0020to\u0020drive\u0020object\u0020based\u0020on\u0020\u0024file\u002D\u003EgetMimeType\u0028\u0029\u003B",
-            "url": "classes/GoogleDrive.html#method_getUrlFromMimeType"
-        },                {
             "fqsen": "\\GoogleDrive\u003A\u003AdeleteDriveFolder\u0028\u0029",
             "name": "deleteDriveFolder",
             "summary": "Delete\u0020a\u0020folder\u0020in\u0020drive",
@@ -5620,11 +5155,6 @@ Search.appendIndex(
             "name": "getDriveFolderTree",
             "summary": "Get\u0020folder\u0020structure",
             "url": "classes/GoogleDrive.html#method_getDriveFolderTree"
-        },                {
-            "fqsen": "\\GoogleDrive\u003A\u003ArecursiveFolderTree\u0028\u0029",
-            "name": "recursiveFolderTree",
-            "summary": "Recursive\u0020function\u0020to\u0020create\u0020a\u0020tree",
-            "url": "classes/GoogleDrive.html#method_recursiveFolderTree"
         },                {
             "fqsen": "\\GoogleDrive\u003A\u003AupdateDriveFile\u0028\u0029",
             "name": "updateDriveFile",
@@ -5660,46 +5190,6 @@ Search.appendIndex(
             "name": "copyDriveFile",
             "summary": "Copy\u0020a\u0020file\u0020with\u0020the\u0020option\u0020to\u0020change\u0020the\u0020name",
             "url": "classes/GoogleDrive.html#method_copyDriveFile"
-        },                {
-            "fqsen": "\\GoogleDrive\u003A\u003AgetGoogleClient\u0028\u0029",
-            "name": "getGoogleClient",
-            "summary": "Return\u0020a\u0020Google\u0020Client\u0020with\u0020the\u0020scopes\u0020necessary\u0020to\u0020manage\u0020Google\u0020Documents",
-            "url": "classes/GoogleDrive.html#method_getGoogleClient"
-        },                {
-            "fqsen": "\\GoogleDrive\u003A\u003AaddError\u0028\u0029",
-            "name": "addError",
-            "summary": "Add\u0020an\u0020error\u0020into\u0020the\u0020classs",
-            "url": "classes/GoogleDrive.html#method_addError"
-        },                {
-            "fqsen": "\\GoogleDrive\u003A\u003A\u0024version",
-            "name": "version",
-            "summary": "",
-            "url": "classes/GoogleDrive.html#property_version"
-        },                {
-            "fqsen": "\\GoogleDrive\u003A\u003A\u0024core",
-            "name": "core",
-            "summary": "",
-            "url": "classes/GoogleDrive.html#property_core"
-        },                {
-            "fqsen": "\\GoogleDrive\u003A\u003A\u0024googleClient",
-            "name": "googleClient",
-            "summary": "",
-            "url": "classes/GoogleDrive.html#property_googleClient"
-        },                {
-            "fqsen": "\\GoogleDrive\u003A\u003A\u0024drive",
-            "name": "drive",
-            "summary": "",
-            "url": "classes/GoogleDrive.html#property_drive"
-        },                {
-            "fqsen": "\\GoogleDrive\u003A\u003A\u0024driveFile",
-            "name": "driveFile",
-            "summary": "",
-            "url": "classes/GoogleDrive.html#property_driveFile"
-        },                {
-            "fqsen": "\\GoogleDrive\u003A\u003A\u0024drivePermission",
-            "name": "drivePermission",
-            "summary": "",
-            "url": "classes/GoogleDrive.html#property_drivePermission"
         },                {
             "fqsen": "\\GoogleDrive\u003A\u003A\u0024pageToken",
             "name": "pageToken",
@@ -5831,11 +5321,6 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/GoogleOAuth2Handler.html#method___construct"
         },                {
-            "fqsen": "\\GoogleOAuth2Handler\u003A\u003AsetupClient\u0028\u0029",
-            "name": "setupClient",
-            "summary": "",
-            "url": "classes/GoogleOAuth2Handler.html#method_setupClient"
-        },                {
             "fqsen": "\\GoogleOAuth2Handler\u003A\u003AgetRefreshToken\u0028\u0029",
             "name": "getRefreshToken",
             "summary": "",
@@ -5845,31 +5330,6 @@ Search.appendIndex(
             "name": "performRequest",
             "summary": "",
             "url": "classes/GoogleOAuth2Handler.html#method_performRequest"
-        },                {
-            "fqsen": "\\GoogleOAuth2Handler\u003A\u003A\u0024clientId",
-            "name": "clientId",
-            "summary": "",
-            "url": "classes/GoogleOAuth2Handler.html#property_clientId"
-        },                {
-            "fqsen": "\\GoogleOAuth2Handler\u003A\u003A\u0024clientSecret",
-            "name": "clientSecret",
-            "summary": "",
-            "url": "classes/GoogleOAuth2Handler.html#property_clientSecret"
-        },                {
-            "fqsen": "\\GoogleOAuth2Handler\u003A\u003A\u0024scopes",
-            "name": "scopes",
-            "summary": "",
-            "url": "classes/GoogleOAuth2Handler.html#property_scopes"
-        },                {
-            "fqsen": "\\GoogleOAuth2Handler\u003A\u003A\u0024refreshToken",
-            "name": "refreshToken",
-            "summary": "",
-            "url": "classes/GoogleOAuth2Handler.html#property_refreshToken"
-        },                {
-            "fqsen": "\\GoogleOAuth2Handler\u003A\u003A\u0024client",
-            "name": "client",
-            "summary": "",
-            "url": "classes/GoogleOAuth2Handler.html#property_client"
         },                {
             "fqsen": "\\GoogleOAuth2Handler\u003A\u003A\u0024authUrl",
             "name": "authUrl",
@@ -5885,11 +5345,6 @@ Search.appendIndex(
             "name": "__construct",
             "summary": "",
             "url": "classes/GoogleObjectPeople.html#method___construct"
-        },                {
-            "fqsen": "\\GoogleObjectPeople\u003A\u003AconvertResponseConnectionToContact\u0028\u0029",
-            "name": "convertResponseConnectionToContact",
-            "summary": "",
-            "url": "classes/GoogleObjectPeople.html#method_convertResponseConnectionToContact"
         },                {
             "fqsen": "\\GoogleObjectPeople\u003A\u003Aget\u0028\u0029",
             "name": "get",
@@ -5921,11 +5376,6 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/GoogleObjectPeople.html#constant_PEOPLE_BASE_URL"
         },                {
-            "fqsen": "\\GoogleObjectPeople\u003A\u003A\u0024googleOAuth2Handler",
-            "name": "googleOAuth2Handler",
-            "summary": "",
-            "url": "classes/GoogleObjectPeople.html#property_googleOAuth2Handler"
-        },                {
             "fqsen": "\\GoogleObjectPeople\u003A\u003A\u0024PERSON_FIELDS",
             "name": "PERSON_FIELDS",
             "summary": "",
@@ -5955,11 +5405,6 @@ Search.appendIndex(
             "name": "delete",
             "summary": "",
             "url": "classes/GoogleObjectContact.html#method_delete"
-        },                {
-            "fqsen": "\\GoogleObjectContact\u003A\u003A\u0024googlePeople",
-            "name": "googlePeople",
-            "summary": "",
-            "url": "classes/GoogleObjectContact.html#property_googlePeople"
         },                {
             "fqsen": "\\_GoogleSecrets_CLASS_",
             "name": "_GoogleSecrets_CLASS_",
@@ -6176,50 +5621,20 @@ Search.appendIndex(
             "summary": "Return\u0020decoded\u0020JSON\u0020response",
             "url": "classes/InsightlyRequest.html#method_asJSON"
         },                {
-            "fqsen": "\\InsightlyRequest\u003A\u003A\u0024body",
+            "fqsen": "\\InsightlyRequest\u003A\u003Abody\u0028\u0029",
             "name": "body",
-            "summary": "Response\u0020body",
-            "url": "classes/InsightlyRequest.html#property_body"
-        },                {
-            "fqsen": "\\InsightlyRequest\u003A\u003Amethod\u0028\u0029",
-            "name": "method",
-            "summary": "Set\u0020request\u0020method",
-            "url": "classes/InsightlyRequest.html#method_method"
+            "summary": "Add\u0020data\u0020to\u0020the\u0020current\u0020request",
+            "url": "classes/InsightlyRequest.html#method_body"
         },                {
             "fqsen": "\\InsightlyRequest\u003A\u003AqueryParam\u0028\u0029",
             "name": "queryParam",
             "summary": "Add\u0020query\u0020parameter\u0020to\u0020the\u0020current\u0020request",
             "url": "classes/InsightlyRequest.html#method_queryParam"
         },                {
-            "fqsen": "\\InsightlyRequest\u003A\u003AbuildQueryString\u0028\u0029",
-            "name": "buildQueryString",
-            "summary": "Build\u0020query\u0020string\u0020for\u0020the\u0020current\u0020request",
-            "url": "classes/InsightlyRequest.html#method_buildQueryString"
-        },                {
             "fqsen": "\\InsightlyRequest\u003A\u003AURL_BASE",
             "name": "URL_BASE",
             "summary": "API\u0020URL",
             "url": "classes/InsightlyRequest.html#constant_URL_BASE"
-        },                {
-            "fqsen": "\\InsightlyRequest\u003A\u003A\u0024curl",
-            "name": "curl",
-            "summary": "CURL\u0020resource",
-            "url": "classes/InsightlyRequest.html#property_curl"
-        },                {
-            "fqsen": "\\InsightlyRequest\u003A\u003A\u0024url_path",
-            "name": "url_path",
-            "summary": "URL\u0020path\u0020outside\u0020the\u0020base\u0020URL",
-            "url": "classes/InsightlyRequest.html#property_url_path"
-        },                {
-            "fqsen": "\\InsightlyRequest\u003A\u003A\u0024headers",
-            "name": "headers",
-            "summary": "Request\u0020headers",
-            "url": "classes/InsightlyRequest.html#property_headers"
-        },                {
-            "fqsen": "\\InsightlyRequest\u003A\u003A\u0024querystrings",
-            "name": "querystrings",
-            "summary": "Request\u0020parameters",
-            "url": "classes/InsightlyRequest.html#property_querystrings"
         },                {
             "fqsen": "\\_Instagram_CLASS_",
             "name": "_Instagram_CLASS_",
@@ -6250,11 +5665,6 @@ Search.appendIndex(
             "name": "addError",
             "summary": "",
             "url": "classes/Instagram.html#method_addError"
-        },                {
-            "fqsen": "\\Instagram\u003A\u003A\u0024core",
-            "name": "core",
-            "summary": "",
-            "url": "classes/Instagram.html#property_core"
         },                {
             "fqsen": "\\Instagram\u003A\u003A\u0024config",
             "name": "config",
@@ -6331,11 +5741,6 @@ Search.appendIndex(
             "summary": "Android\u0020Messages",
             "url": "classes/MobilePush.html#method_sendGCMMessage"
         },                {
-            "fqsen": "\\MobilePush\u003A\u003A\u0024core",
-            "name": "core",
-            "summary": "",
-            "url": "classes/MobilePush.html#property_core"
-        },                {
             "fqsen": "\\MobilePush\u003A\u003A\u0024error",
             "name": "error",
             "summary": "",
@@ -6345,16 +5750,6 @@ Search.appendIndex(
             "name": "errorMsg",
             "summary": "",
             "url": "classes/MobilePush.html#property_errorMsg"
-        },                {
-            "fqsen": "\\MobilePush\u003A\u003A\u0024apns",
-            "name": "apns",
-            "summary": "",
-            "url": "classes/MobilePush.html#property_apns"
-        },                {
-            "fqsen": "\\MobilePush\u003A\u003A\u0024gcm",
-            "name": "gcm",
-            "summary": "",
-            "url": "classes/MobilePush.html#property_gcm"
         },                {
             "fqsen": "\\MobilePush\u003A\u003A\u0024apnConnection",
             "name": "apnConnection",
@@ -6415,11 +5810,6 @@ Search.appendIndex(
             "name": "addError",
             "summary": "",
             "url": "classes/Models.html#method_addError"
-        },                {
-            "fqsen": "\\Models\u003A\u003A\u0024core",
-            "name": "core",
-            "summary": "",
-            "url": "classes/Models.html#property_core"
         },                {
             "fqsen": "\\Models\u003A\u003A\u0024models",
             "name": "models",
@@ -6491,16 +5881,6 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/PubSub.html#method_acknowledgeLastMessages"
         },                {
-            "fqsen": "\\PubSub\u003A\u003AaddError\u0028\u0029",
-            "name": "addError",
-            "summary": "Add\u0020Error\u0020message",
-            "url": "classes/PubSub.html#method_addError"
-        },                {
-            "fqsen": "\\PubSub\u003A\u003A\u0024core",
-            "name": "core",
-            "summary": "",
-            "url": "classes/PubSub.html#property_core"
-        },                {
             "fqsen": "\\PubSub\u003A\u003A\u0024client",
             "name": "client",
             "summary": "",
@@ -6560,11 +5940,6 @@ Search.appendIndex(
             "name": "parse",
             "summary": "",
             "url": "classes/RenderMarkDown.html#method_parse"
-        },                {
-            "fqsen": "\\RenderMarkDown\u003A\u003A\u0024core",
-            "name": "core",
-            "summary": "",
-            "url": "classes/RenderMarkDown.html#property_core"
         },                {
             "fqsen": "\\RenderMarkDown\u003A\u003A\u0024objMarkDown",
             "name": "objMarkDown",
@@ -6631,11 +6006,6 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/RenderTwig.html#method_autoload"
         },                {
-            "fqsen": "\\RenderTwig\u003A\u003A\u0024core",
-            "name": "core",
-            "summary": "",
-            "url": "classes/RenderTwig.html#property_core"
-        },                {
             "fqsen": "\\RenderTwig\u003A\u003A\u0024config",
             "name": "config",
             "summary": "",
@@ -6660,11 +6030,6 @@ Search.appendIndex(
             "name": "twig",
             "summary": "",
             "url": "classes/RenderTwig.html#property_twig"
-        },                {
-            "fqsen": "\\RenderTwig\u003A\u003A\u0024index",
-            "name": "index",
-            "summary": "",
-            "url": "classes/RenderTwig.html#property_index"
         },                {
             "fqsen": "\\RenderTwig\u003A\u003A\u0024load_from_cache",
             "name": "load_from_cache",
@@ -7061,20 +6426,10 @@ Search.appendIndex(
             "summary": "Return\u0020an\u0020array\u0020of\u0020dates\u0020calling\u0020getArray\u0020where\u0020the\u0020date\u0020is\u0020the\u0020key\u0020and\u0020filling\u0020it\u0020with\u0020\u0024value",
             "url": "classes/SmartDate.html#method_getArrayInKeys"
         },                {
-            "fqsen": "\\SmartDate\u003A\u003A\u0024core",
-            "name": "core",
-            "summary": "",
-            "url": "classes/SmartDate.html#property_core"
-        },                {
             "fqsen": "\\SmartDate\u003A\u003A\u0024date",
             "name": "date",
             "summary": "",
             "url": "classes/SmartDate.html#property_date"
-        },                {
-            "fqsen": "\\SmartDate\u003A\u003A\u0024format",
-            "name": "format",
-            "summary": "",
-            "url": "classes/SmartDate.html#property_format"
         },                {
             "fqsen": "\\_Tests_CLASS_",
             "name": "_Tests_CLASS_",
@@ -7236,11 +6591,6 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Trace.html#method_addError"
         },                {
-            "fqsen": "\\Trace\u003A\u003A\u0024core",
-            "name": "core",
-            "summary": "",
-            "url": "classes/Trace.html#property_core"
-        },                {
             "fqsen": "\\Trace\u003A\u003A\u0024ds",
             "name": "ds",
             "summary": "",
@@ -7280,36 +6630,6 @@ Search.appendIndex(
             "name": "toParameter",
             "summary": "Maps\u0020a\u0020value\u0020to\u0020the\u0020expected\u0020parameter\u0020format.",
             "url": "classes/Google-Cloud-BigQuery-ValueMapper.html#method_toParameter"
-        },                {
-            "fqsen": "\\Google\\Cloud\\BigQuery\\ValueMapper\u003A\u003ArecordFromBigQuery\u0028\u0029",
-            "name": "recordFromBigQuery",
-            "summary": "",
-            "url": "classes/Google-Cloud-BigQuery-ValueMapper.html#method_recordFromBigQuery"
-        },                {
-            "fqsen": "\\Google\\Cloud\\BigQuery\\ValueMapper\u003A\u003ArepeatedValueFromBigQuery\u0028\u0029",
-            "name": "repeatedValueFromBigQuery",
-            "summary": "",
-            "url": "classes/Google-Cloud-BigQuery-ValueMapper.html#method_repeatedValueFromBigQuery"
-        },                {
-            "fqsen": "\\Google\\Cloud\\BigQuery\\ValueMapper\u003A\u003AobjectToParameter\u0028\u0029",
-            "name": "objectToParameter",
-            "summary": "",
-            "url": "classes/Google-Cloud-BigQuery-ValueMapper.html#method_objectToParameter"
-        },                {
-            "fqsen": "\\Google\\Cloud\\BigQuery\\ValueMapper\u003A\u003AarrayToParameter\u0028\u0029",
-            "name": "arrayToParameter",
-            "summary": "",
-            "url": "classes/Google-Cloud-BigQuery-ValueMapper.html#method_arrayToParameter"
-        },                {
-            "fqsen": "\\Google\\Cloud\\BigQuery\\ValueMapper\u003A\u003AassocArrayToParameter\u0028\u0029",
-            "name": "assocArrayToParameter",
-            "summary": "",
-            "url": "classes/Google-Cloud-BigQuery-ValueMapper.html#method_assocArrayToParameter"
-        },                {
-            "fqsen": "\\Google\\Cloud\\BigQuery\\ValueMapper\u003A\u003AtimestampFromBigQuery\u0028\u0029",
-            "name": "timestampFromBigQuery",
-            "summary": "Converts\u0020a\u0020timestamp\u0020in\u0020string\u0020format\u0020received\u0020from\u0020BigQuery\u0020to\u0020a\n\u007B\u0040see\u0020Timestamp\u007D.",
-            "url": "classes/Google-Cloud-BigQuery-ValueMapper.html#method_timestampFromBigQuery"
         },                {
             "fqsen": "\\Google\\Cloud\\BigQuery\\ValueMapper\u003A\u003ATYPE_BOOL",
             "name": "TYPE_BOOL",
@@ -7416,11 +6736,6 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Google-Cloud-BigQuery-ValueMapper.html#constant_DATETIME_FORMAT_INSERT"
         },                {
-            "fqsen": "\\Google\\Cloud\\BigQuery\\ValueMapper\u003A\u003A\u0024returnInt64AsObject",
-            "name": "returnInt64AsObject",
-            "summary": "",
-            "url": "classes/Google-Cloud-BigQuery-ValueMapper.html#property_returnInt64AsObject"
-        },                {
             "fqsen": "\\WorkFlows",
             "name": "WorkFlows",
             "summary": "",
@@ -7501,16 +6816,6 @@ Search.appendIndex(
             "summary": "Add\u0020an\u0020error\u0020in\u0020the\u0020class",
             "url": "classes/WorkFlows.html#method_addError"
         },                {
-            "fqsen": "\\WorkFlows\u003A\u003AgetEntityTransformedWithMandrillTemplateData\u0028\u0029",
-            "name": "getEntityTransformedWithMandrillTemplateData",
-            "summary": "Return\u0020an\u0020array\u0020with\u0020the\u0020structure\u0020of\u0020ds\u003ACloudFrameWorkEmailTemplates\u0020taking\u0020Mandrill\u0020\u0024template\u0020array\u0020info",
-            "url": "classes/WorkFlows.html#method_getEntityTransformedWithMandrillTemplateData"
-        },                {
-            "fqsen": "\\WorkFlows\u003A\u003AgetEntityFromMandrillMessage\u0028\u0029",
-            "name": "getEntityFromMandrillMessage",
-            "summary": "Return\u0020an\u0020array\u0020with\u0020the\u0020structure\u0020of\u0020ds\u003ACloudFrameWorkEmails\u0020taking\u0020Mandrill\u0020\u0024message\u0020array\u0020info",
-            "url": "classes/WorkFlows.html#method_getEntityFromMandrillMessage"
-        },                {
             "fqsen": "\\WorkFlows\u003A\u003A\u0024version",
             "name": "version",
             "summary": "",
@@ -7576,20 +6881,10 @@ Search.appendIndex(
             "summary": "Assign\u0020the\u0020path\u0020to\u0020Root\u0020of\u0020the\u0020app",
             "url": "classes/Core7.html#method_setAppPath"
         },                {
-            "fqsen": "\\Core7\u003A\u003AisApiPath\u0028\u0029",
-            "name": "isApiPath",
-            "summary": "Is\u0020the\u0020current\u0020route\u0020part\u0020of\u0020the\u0020API\u003F",
-            "url": "classes/Core7.html#method_isApiPath"
-        },                {
             "fqsen": "\\Core7\u003A\u003AloadClass\u0028\u0029",
             "name": "loadClass",
             "summary": "Return\u0020an\u0020object\u0020of\u0020the\u0020Class\u0020\u0024class.\u0020If\u0020this\u0020object\u0020has\u0020been\u0020previously\u0020called\u0020class",
             "url": "classes/Core7.html#method_loadClass"
-        },                {
-            "fqsen": "\\Core7\u003A\u003AinitDataStorage\u0028\u0029",
-            "name": "initDataStorage",
-            "summary": "Init\u0020gc_datastorage_client\u0020and\u0020registerStreamWrapper",
-            "url": "classes/Core7.html#method_initDataStorage"
         },                {
             "fqsen": "\\Core7\u003A\u003AjsonEncode\u0028\u0029",
             "name": "jsonEncode",
@@ -7690,11 +6985,6 @@ Search.appendIndex(
             "name": "api",
             "summary": "",
             "url": "classes/Core7.html#property_api"
-        },                {
-            "fqsen": "\\Core7\u003A\u003A\u0024loadedClasses",
-            "name": "loadedClasses",
-            "summary": "",
-            "url": "classes/Core7.html#property_loadedClasses"
         },                {
             "fqsen": "\\Core7\u003A\u003A\u0024gc_datastorage_client",
             "name": "gc_datastorage_client",
@@ -8056,26 +7346,6 @@ Search.appendIndex(
             "summary": "Process\u0020a\u0020config\u0020array",
             "url": "classes/CoreConfig.html#method_processConfigData"
         },                {
-            "fqsen": "\\CoreConfig\u003A\u003AisConditionalTag\u0028\u0029",
-            "name": "isConditionalTag",
-            "summary": "Evalue\u0020if\u0020the\u0020tag\u0020is\u0020a\u0020condition",
-            "url": "classes/CoreConfig.html#method_isConditionalTag"
-        },                {
-            "fqsen": "\\CoreConfig\u003A\u003AgetConditionalTagResult\u0028\u0029",
-            "name": "getConditionalTagResult",
-            "summary": "Evalue\u0020conditional\u0020tags\u0020on\u0020config\u0020file",
-            "url": "classes/CoreConfig.html#method_getConditionalTagResult"
-        },                {
-            "fqsen": "\\CoreConfig\u003A\u003AisAssignationTag\u0028\u0029",
-            "name": "isAssignationTag",
-            "summary": "Evalue\u0020if\u0020the\u0020tag\u0020is\u0020a\u0020condition",
-            "url": "classes/CoreConfig.html#method_isAssignationTag"
-        },                {
-            "fqsen": "\\CoreConfig\u003A\u003AsetAssignationTag\u0028\u0029",
-            "name": "setAssignationTag",
-            "summary": "Execute\u0020an\u0020assignation\u0020based\u0020on\u0020the\u0020tagcode",
-            "url": "classes/CoreConfig.html#method_setAssignationTag"
-        },                {
             "fqsen": "\\CoreConfig\u003A\u003AconvertTags\u0028\u0029",
             "name": "convertTags",
             "summary": "Convert\u0020tags\u0020inside\u0020a\u0020string\u0020or\u0020object",
@@ -8111,16 +7381,6 @@ Search.appendIndex(
             "summary": "Get\u0020var\u0020Cache\u0020of\u0020the\u0020module",
             "url": "classes/CoreConfig.html#method_getCache"
         },                {
-            "fqsen": "\\CoreConfig\u003A\u003A\u0024core",
-            "name": "core",
-            "summary": "",
-            "url": "classes/CoreConfig.html#property_core"
-        },                {
-            "fqsen": "\\CoreConfig\u003A\u003A\u0024_configPaths",
-            "name": "_configPaths",
-            "summary": "",
-            "url": "classes/CoreConfig.html#property__configPaths"
-        },                {
             "fqsen": "\\CoreConfig\u003A\u003A\u0024data",
             "name": "data",
             "summary": "",
@@ -8145,11 +7405,6 @@ Search.appendIndex(
             "name": "cache_secret_iv",
             "summary": "",
             "url": "classes/CoreConfig.html#property_cache_secret_iv"
-        },                {
-            "fqsen": "\\CoreConfig\u003A\u003A\u0024lang",
-            "name": "lang",
-            "summary": "",
-            "url": "classes/CoreConfig.html#property_lang"
         },                {
             "fqsen": "\\CoreSession",
             "name": "CoreSession",
@@ -8341,11 +7596,6 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/CoreSecurity.html#method_checkServerKey"
         },                {
-            "fqsen": "\\CoreSecurity\u003A\u003AcheckIPs\u0028\u0029",
-            "name": "checkIPs",
-            "summary": "",
-            "url": "classes/CoreSecurity.html#method_checkIPs"
-        },                {
             "fqsen": "\\CoreSecurity\u003A\u003AgetHeader\u0028\u0029",
             "name": "getHeader",
             "summary": "",
@@ -8365,11 +7615,6 @@ Search.appendIndex(
             "name": "generateCloudFrameWorkSecurityString",
             "summary": "",
             "url": "classes/CoreSecurity.html#method_generateCloudFrameWorkSecurityString"
-        },                {
-            "fqsen": "\\CoreSecurity\u003A\u003AcreateDSToken\u0028\u0029",
-            "name": "createDSToken",
-            "summary": "",
-            "url": "classes/CoreSecurity.html#method_createDSToken"
         },                {
             "fqsen": "\\CoreSecurity\u003A\u003AgetDSTokenInfo\u0028\u0029",
             "name": "getDSTokenInfo",
@@ -8505,11 +7750,6 @@ Search.appendIndex(
             "name": "replaceAccentedCharacters",
             "summary": "Replace\u0020Accented\u0020characters\u0020to\u0020avoid\u0020Key\u0020troubles\nsource\u003A\u0020https\u003A\/\/stackoverflow.com\/questions\/3371697\/replacing\u002Daccented\u002Dcharacters\u002Dphp",
             "url": "classes/CoreSecurity.html#method_replaceAccentedCharacters"
-        },                {
-            "fqsen": "\\CoreSecurity\u003A\u003A\u0024core",
-            "name": "core",
-            "summary": "",
-            "url": "classes/CoreSecurity.html#property_core"
         },                {
             "fqsen": "\\CoreSecurity\u003A\u003A\u0024dsToken",
             "name": "dsToken",
@@ -8851,11 +8091,6 @@ Search.appendIndex(
             "summary": "Allow\u0020to\u0020execute\u0020a\u0020GET,POST,PUT,PATCH,DELETE\u0020call\u0020with\u0020variables\u0020and\u0020files\nAll\u0020the\u0020calls\u0020will\u0020try\u0020to\u0020add\u0020the\u0020following\u0020headers\u0020if\u0020they\u0020exit\u0020in\u0020\u0024this\u002D\u003Ecore\u002D\u003Econfig\u003A\n\u0020\u0020\u002D\u0020X\u002DCLOUDFRAMEWORK\u002DSECURITY\n\u0020\u0020\u002D\u0020X\u002DSERVER\u002DKEY\n\u0020\u0020\u002D\u0020X\u002DDS\u002DTOKEN\n\u0020\u0020\u002D\u0020X\u002DEXTRA\u002DINFO",
             "url": "classes/CoreRequest.html#method_call"
         },                {
-            "fqsen": "\\CoreRequest\u003A\u003AprocessResponseHeaders\u0028\u0029",
-            "name": "processResponseHeaders",
-            "summary": "",
-            "url": "classes/CoreRequest.html#method_processResponseHeaders"
-        },                {
             "fqsen": "\\CoreRequest\u003A\u003AgetLastResponseCode\u0028\u0029",
             "name": "getLastResponseCode",
             "summary": "",
@@ -9066,11 +8301,6 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/CoreUser.html#constant_APIServices"
         },                {
-            "fqsen": "\\CoreUser\u003A\u003A\u0024core",
-            "name": "core",
-            "summary": "",
-            "url": "classes/CoreUser.html#property_core"
-        },                {
             "fqsen": "\\CoreUser\u003A\u003A\u0024id",
             "name": "id",
             "summary": "",
@@ -9236,11 +8466,6 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/CoreLocalization.html#method_addError"
         },                {
-            "fqsen": "\\CoreLocalization\u003A\u003A\u0024core",
-            "name": "core",
-            "summary": "",
-            "url": "classes/CoreLocalization.html#property_core"
-        },                {
             "fqsen": "\\CoreLocalization\u003A\u003A\u0024data",
             "name": "data",
             "summary": "",
@@ -9260,11 +8485,6 @@ Search.appendIndex(
             "name": "cacheExpiration",
             "summary": "",
             "url": "classes/CoreLocalization.html#property_cacheExpiration"
-        },                {
-            "fqsen": "\\CoreLocalization\u003A\u003A\u0024init",
-            "name": "init",
-            "summary": "",
-            "url": "classes/CoreLocalization.html#property_init"
         },                {
             "fqsen": "\\CoreLocalization\u003A\u003A\u0024error",
             "name": "error",
@@ -9406,11 +8626,6 @@ Search.appendIndex(
             "summary": "Get\u0020var\u0020Cache\u0020of\u0020the\u0020module",
             "url": "classes/CoreModel.html#method_getCache"
         },                {
-            "fqsen": "\\CoreModel\u003A\u003AaddError\u0028\u0029",
-            "name": "addError",
-            "summary": "",
-            "url": "classes/CoreModel.html#method_addError"
-        },                {
             "fqsen": "\\CoreModel\u003A\u003A\u0024error",
             "name": "error",
             "summary": "",
@@ -9451,11 +8666,6 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/CoreModel.html#property_cache"
         },                {
-            "fqsen": "\\CoreModel\u003A\u003A\u0024core",
-            "name": "core",
-            "summary": "",
-            "url": "classes/CoreModel.html#property_core"
-        },                {
             "fqsen": "\\CoreModel\u003A\u003A\u0024models",
             "name": "models",
             "summary": "",
@@ -9476,11 +8686,6 @@ Search.appendIndex(
             "summary": "Add\u0020a\u0020LOG\u0020entry\u0020in\u0020CloudFrameWorkLogs",
             "url": "classes/CFILog.html#method_add"
         },                {
-            "fqsen": "\\CFILog\u003A\u003AinitDSLogs\u0028\u0029",
-            "name": "initDSLogs",
-            "summary": "Init\u0020\u0024this\u002D\u003EdsLog",
-            "url": "classes/CFILog.html#method_initDSLogs"
-        },                {
             "fqsen": "\\CFILog\u003A\u003AsendToCFService\u0028\u0029",
             "name": "sendToCFService",
             "summary": "Add\u0020a\u0020LOG\u0020entry\u0020in\u0020CloudFrameWorkLogs",
@@ -9495,11 +8700,6 @@ Search.appendIndex(
             "name": "bitacora",
             "summary": "Add\u0020a\u0020LOG\u0020entry\u0020in\u0020CloudFrameWorkBitacora",
             "url": "classes/CFILog.html#method_bitacora"
-        },                {
-            "fqsen": "\\CFILog\u003A\u003AaddError\u0028\u0029",
-            "name": "addError",
-            "summary": "",
-            "url": "classes/CFILog.html#method_addError"
         },                {
             "fqsen": "\\CFILog\u003A\u003A\u0024core",
             "name": "core",
@@ -9555,11 +8755,6 @@ Search.appendIndex(
             "name": "addError",
             "summary": "Add\u0020an\u0020error\u0020in\u0020the\u0020class",
             "url": "classes/CoreLogic2020.html#method_addError"
-        },                {
-            "fqsen": "\\CoreLogic2020\u003A\u003A\u0024core",
-            "name": "core",
-            "summary": "",
-            "url": "classes/CoreLogic2020.html#property_core"
         },                {
             "fqsen": "\\CoreLogic2020\u003A\u003A\u0024method",
             "name": "method",
