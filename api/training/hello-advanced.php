@@ -2,7 +2,9 @@
 /**
  * Basic structure for a CloudFramework API
  * last-update 2024-01
- * Author: CloudFramework.io
+ * Author: CloudFramework.io.
+ * Version: 1.0.0
+ */
  */
 class API extends RESTful
 {
