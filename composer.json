@@ -1,5 +1,18 @@
 {
     "require": {
-        "cloudframework-io/backend-core-php8": "^8.1"
+        "cloudframework-io/backend-core-php8": "^8.1.14"
+    },
+    "scripts": {
+        "credentials": [
+            "[ -d ./local_data ] && echo \"installing ./local_data\" || mkdir  ./local_data ",
+            "gcloud auth application-default login",
+            "mv ~/.config/gcloud/application_default_credentials.json local_data/"
+        ],
+        "serve": [
+            "php -S 0.0.0.0:8080 vendor/cloudframework-io/backend-core-php8/src/dispatcher.php"
+        ]
+    },
+    "config": {
+        "process-timeout": 0
     }
 }
