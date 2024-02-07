@@ -191,7 +191,7 @@
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/Core7.php"><a href="files/src-core7.html"><abbr title="src/Core7.php">Core7.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">4764</span>
+    <span class="phpdocumentor-element-found-in__line">4771</span>
 
     </aside>
 
@@ -220,6 +220,12 @@
 
 </h4>
 <dl class="phpdocumentor-table-of-contents">
+            <dt class="phpdocumentor-table-of-contents__entry -constant -public">
+    <a href="classes/CoreUser.html#constant_APIPortalServices">APIPortalServices</a>
+    <span>
+        &nbsp;= &#039;https://api.cloudframework.io/erp/portal-users/2.0&#039;                            </span>
+</dt>
+
             <dt class="phpdocumentor-table-of-contents__entry -constant -public">
     <a href="classes/CoreUser.html#constant_APIServices">APIServices</a>
     <span>
@@ -313,6 +319,12 @@
                         &nbsp;: mixed            </span>
 </dt>
 
+            <dt class="phpdocumentor-table-of-contents__entry -property -private">
+    <a href="classes/CoreUser.html#property_core">$core</a>
+    <span>
+                        &nbsp;: mixed            </span>
+</dt>
+
     </dl>
 
 <h4 id="toc-methods">
@@ -344,6 +356,13 @@
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/CoreUser.html#method_checkERPToken">checkERPToken()</a>
     <span>
+                                &nbsp;: void    </span>
+</dt>
+<dd>Use checkPlatformToken</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/CoreUser.html#method_checkPlatformToken">checkPlatformToken()</a>
+    <span>
                                 &nbsp;: false|void    </span>
 </dt>
 <dd>Verify that a token is valid and update the following properties: namespace, userId, userData
@@ -355,6 +374,14 @@ It allows to work with several active tokens at the same time</dd>
                                 &nbsp;: bool|void    </span>
 </dt>
 <dd>Check a token previously generated</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/CoreUser.html#method_checkWebToken">checkWebToken()</a>
+    <span>
+                                &nbsp;: false|void    </span>
+</dt>
+<dd>Verify that a token is valid and update the following properties: namespace, userId, userData
+It allows to work with several active tokens at the same time</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/CoreUser.html#method_createUserToken">createUserToken()</a>
@@ -428,11 +455,19 @@ This method is to be used together with setAuth(..)</dd>
 <dd>Get a user lang. &#039;en&#039; default</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/CoreUser.html#method_loginCloudPlatform">loginCloudPlatform()</a>
+    <span>
+                                &nbsp;: bool|void    </span>
+</dt>
+<dd>Execute a sign-in over the CLOUD-PLATFORM using $user/$password in $platform_id
+and store the token and user info in $this-&gt;token, $this-&gt;data</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/CoreUser.html#method_loginERP">loginERP()</a>
     <span>
                                 &nbsp;: bool|void    </span>
 </dt>
-<dd>Generate Token from ERP login</dd>
+<dd>Deprecated. Use loginCloudPlatform</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/CoreUser.html#method_logoutERPToken">logoutERPToken()</a>
@@ -517,6 +552,34 @@ This method is to be used together with setAuth(..)</dd>
 
         </h3>
                     <article class="phpdocumentor-element -constant -public ">
+    <h4 class="phpdocumentor-element__name" id="constant_APIPortalServices">
+        APIPortalServices
+        <a href="classes/CoreUser.html#constant_APIPortalServices" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/Core7.php"><a href="files/src-core7.html"><abbr title="src/Core7.php">Core7.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">4795</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-signature phpdocumentor-code ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+        <span class="phpdocumentor-signature__type">mixed</span>
+    <span class="phpdocumentor-signature__name">APIPortalServices</span>
+    = <span class="phpdocumentor-signature__default-value">&#039;https://api.cloudframework.io/erp/portal-users/2.0&#039;</span>
+</code>
+
+
+    
+    
+    
+
+</article>
+                    <article class="phpdocumentor-element -constant -public ">
     <h4 class="phpdocumentor-element__name" id="constant_APIServices">
         APIServices
         <a href="classes/CoreUser.html#constant_APIServices" class="headerlink"><i class="fas fa-link"></i></a>
@@ -526,7 +589,7 @@ This method is to be used together with setAuth(..)</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/Core7.php"><a href="files/src-core7.html"><abbr title="src/Core7.php">Core7.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">4787</span>
+    <span class="phpdocumentor-element-found-in__line">4794</span>
 
     </aside>
 
@@ -570,7 +633,7 @@ This method is to be used together with setAuth(..)</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/Core7.php"><a href="files/src-core7.html"><abbr title="src/Core7.php">Core7.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">4780</span>
+    <span class="phpdocumentor-element-found-in__line">4787</span>
 
     </aside>
 
@@ -605,7 +668,7 @@ This method is to be used together with setAuth(..)</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/Core7.php"><a href="files/src-core7.html"><abbr title="src/Core7.php">Core7.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">4774</span>
+    <span class="phpdocumentor-element-found-in__line">4781</span>
 
     </aside>
 
@@ -640,7 +703,7 @@ This method is to be used together with setAuth(..)</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/Core7.php"><a href="files/src-core7.html"><abbr title="src/Core7.php">Core7.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">4772</span>
+    <span class="phpdocumentor-element-found-in__line">4779</span>
 
     </aside>
 
@@ -673,7 +736,7 @@ This method is to be used together with setAuth(..)</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/Core7.php"><a href="files/src-core7.html"><abbr title="src/Core7.php">Core7.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">4782</span>
+    <span class="phpdocumentor-element-found-in__line">4789</span>
 
     </aside>
 
@@ -706,7 +769,7 @@ This method is to be used together with setAuth(..)</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/Core7.php"><a href="files/src-core7.html"><abbr title="src/Core7.php">Core7.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">4783</span>
+    <span class="phpdocumentor-element-found-in__line">4790</span>
 
     </aside>
 
@@ -739,7 +802,7 @@ This method is to be used together with setAuth(..)</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/Core7.php"><a href="files/src-core7.html"><abbr title="src/Core7.php">Core7.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">4784</span>
+    <span class="phpdocumentor-element-found-in__line">4791</span>
 
     </aside>
 
@@ -772,7 +835,7 @@ This method is to be used together with setAuth(..)</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/Core7.php"><a href="files/src-core7.html"><abbr title="src/Core7.php">Core7.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">4776</span>
+    <span class="phpdocumentor-element-found-in__line">4783</span>
 
     </aside>
 
@@ -807,7 +870,7 @@ This method is to be used together with setAuth(..)</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/Core7.php"><a href="files/src-core7.html"><abbr title="src/Core7.php">Core7.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">4768</span>
+    <span class="phpdocumentor-element-found-in__line">4775</span>
 
     </aside>
 
@@ -840,7 +903,7 @@ This method is to be used together with setAuth(..)</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/Core7.php"><a href="files/src-core7.html"><abbr title="src/Core7.php">Core7.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">4767</span>
+    <span class="phpdocumentor-element-found-in__line">4774</span>
 
     </aside>
 
@@ -873,7 +936,7 @@ This method is to be used together with setAuth(..)</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/Core7.php"><a href="files/src-core7.html"><abbr title="src/Core7.php">Core7.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">4778</span>
+    <span class="phpdocumentor-element-found-in__line">4785</span>
 
     </aside>
 
@@ -908,7 +971,7 @@ This method is to be used together with setAuth(..)</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/Core7.php"><a href="files/src-core7.html"><abbr title="src/Core7.php">Core7.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">4769</span>
+    <span class="phpdocumentor-element-found-in__line">4776</span>
 
     </aside>
 
@@ -941,7 +1004,7 @@ This method is to be used together with setAuth(..)</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/Core7.php"><a href="files/src-core7.html"><abbr title="src/Core7.php">Core7.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">4770</span>
+    <span class="phpdocumentor-element-found-in__line">4777</span>
 
     </aside>
 
@@ -974,7 +1037,7 @@ This method is to be used together with setAuth(..)</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/Core7.php"><a href="files/src-core7.html"><abbr title="src/Core7.php">Core7.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">4771</span>
+    <span class="phpdocumentor-element-found-in__line">4778</span>
 
     </aside>
 
@@ -983,6 +1046,39 @@ This method is to be used together with setAuth(..)</dd>
     <span class="phpdocumentor-signature__visibility">public</span>
         <span class="phpdocumentor-signature__type">mixed</span>
     <span class="phpdocumentor-signature__name">$tokenExpiration</span>
+    </code>
+
+    
+    
+    
+
+</article>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -private
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="property_core">
+        $core
+        <a href="classes/CoreUser.html#property_core" class="headerlink"><i class="fas fa-link"></i></a>
+
+        <span class="phpdocumentor-element__modifiers">
+                                </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/Core7.php"><a href="files/src-core7.html"><abbr title="src/Core7.php">Core7.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">4773</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">private</span>
+        <span class="phpdocumentor-signature__type">mixed</span>
+    <span class="phpdocumentor-signature__name">$core</span>
     </code>
 
     
@@ -1012,7 +1108,7 @@ This method is to be used together with setAuth(..)</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/Core7.php"><a href="files/src-core7.html"><abbr title="src/Core7.php">Core7.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">4789</span>
+    <span class="phpdocumentor-element-found-in__line">4797</span>
 
     </aside>
 
@@ -1053,7 +1149,7 @@ This method is to be used together with setAuth(..)</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/Core7.php"><a href="files/src-core7.html"><abbr title="src/Core7.php">Core7.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">5470</span>
+    <span class="phpdocumentor-element-found-in__line">5612</span>
 
     </aside>
 
@@ -1061,13 +1157,20 @@ This method is to be used together with setAuth(..)</dd>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">addError</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$message</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+                    <span class="phpdocumentor-signature__name">addError</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href=""></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$code</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$message</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$code</span>
+                : <span class="phpdocumentor-signature__argument__return-type"><a href=""></a></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$message</span>
                 : <span class="phpdocumentor-signature__argument__return-type">null</span>
@@ -1095,7 +1198,7 @@ This method is to be used together with setAuth(..)</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/Core7.php"><a href="files/src-core7.html"><abbr title="src/Core7.php">Core7.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">5443</span>
+    <span class="phpdocumentor-element-found-in__line">5585</span>
 
     </aside>
 
@@ -1138,7 +1241,7 @@ This method is to be used together with setAuth(..)</dd>
         class="phpdocumentor-element
             -method
             -public
-                                                        "
+            -deprecated                                            "
 >
     <h4 class="phpdocumentor-element__name" id="method_checkERPToken">
         checkERPToken()
@@ -1148,7 +1251,77 @@ This method is to be used together with setAuth(..)</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/Core7.php"><a href="files/src-core7.html"><abbr title="src/Core7.php">Core7.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">5161</span>
+    <span class="phpdocumentor-element-found-in__line">5190</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Use checkPlatformToken</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature -deprecated">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">checkERPToken</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$token</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$integration_key</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">bool&nbsp;</span><span class="phpdocumentor-signature__argument__name">$refresh</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">false</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$token</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$integration_key</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$refresh</span>
+                : <span class="phpdocumentor-signature__argument__return-type">bool</span>
+                 = <span class="phpdocumentor-signature__argument__default-value">false</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="classes/CoreUser.html#method_checkERPToken#tags" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">deprecated</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                                
+                                             
+                                    </dd>
+                                            </dl>
+
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_checkPlatformToken">
+        checkPlatformToken()
+        <a href="classes/CoreUser.html#method_checkPlatformToken" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/Core7.php"><a href="files/src-core7.html"><abbr title="src/Core7.php">Core7.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">5202</span>
 
     </aside>
 
@@ -1157,7 +1330,120 @@ It allows to work with several active tokens at the same time</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">checkERPToken</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$token</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$integration_key</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">bool&nbsp;</span><span class="phpdocumentor-signature__argument__name">$refresh</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">false</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">false|void</span></code>
+                    <span class="phpdocumentor-signature__name">checkPlatformToken</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$token</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$integration_key</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">bool&nbsp;</span><span class="phpdocumentor-signature__argument__name">$refresh</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">false</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">false|void</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$token</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>Token to verify with CloudFramework ERP</p>
+</section>
+
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$integration_key</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>Integration Key to call CloudFramework API for signing</p>
+</section>
+
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$refresh</span>
+                : <span class="phpdocumentor-signature__argument__return-type">bool</span>
+                 = <span class="phpdocumentor-signature__argument__default-value">false</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>if true it ignores cached data and call CLOUD-DIRECTORY API</p>
+</section>
+
+            </dd>
+            </dl>
+
+    
+
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">false|void</span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_checkUserToken">
+        checkUserToken()
+        <a href="classes/CoreUser.html#method_checkUserToken" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/Core7.php"><a href="files/src-core7.html"><abbr title="src/Core7.php">Core7.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">4868</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Check a token previously generated</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">checkUserToken</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$token</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool|void</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$token</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">bool|void</span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_checkWebToken">
+        checkWebToken()
+        <a href="classes/CoreUser.html#method_checkWebToken" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/Core7.php"><a href="files/src-core7.html"><abbr title="src/Core7.php">Core7.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">5302</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Verify that a token is valid and update the following properties: namespace, userId, userData
+It allows to work with several active tokens at the same time</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">checkWebToken</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$token</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$integration_key</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">bool&nbsp;</span><span class="phpdocumentor-signature__argument__name">$refresh</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">false</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">false|void</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -1207,52 +1493,6 @@ It allows to work with several active tokens at the same time</p>
             -public
                                                         "
 >
-    <h4 class="phpdocumentor-element__name" id="method_checkUserToken">
-        checkUserToken()
-        <a href="classes/CoreUser.html#method_checkUserToken" class="headerlink"><i class="fas fa-link"></i></a>
-
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="src/Core7.php"><a href="files/src-core7.html"><abbr title="src/Core7.php">Core7.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">4858</span>
-
-    </aside>
-
-        <p class="phpdocumentor-summary">Check a token previously generated</p>
-
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">checkUserToken</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$token</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool|void</span></code>
-
-    <div class="phpdocumentor-label-line">
-        </div>
-    
-        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-    <dl class="phpdocumentor-argument-list">
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$token</span>
-                : <span class="phpdocumentor-signature__argument__return-type">string</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                
-            </dd>
-            </dl>
-
-    
-
-            <section>
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type">bool|void</span>
-            </section>
-
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -public
-                                                        "
->
     <h4 class="phpdocumentor-element__name" id="method_createUserToken">
         createUserToken()
         <a href="classes/CoreUser.html#method_createUserToken" class="headerlink"><i class="fas fa-link"></i></a>
@@ -1261,7 +1501,7 @@ It allows to work with several active tokens at the same time</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/Core7.php"><a href="files/src-core7.html"><abbr title="src/Core7.php">Core7.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">4900</span>
+    <span class="phpdocumentor-element-found-in__line">4911</span>
 
     </aside>
 
@@ -1322,7 +1562,7 @@ This method is to be used together with setAuth(..)</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/Core7.php"><a href="files/src-core7.html"><abbr title="src/Core7.php">Core7.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">5408</span>
+    <span class="phpdocumentor-element-found-in__line">5550</span>
 
     </aside>
 
@@ -1375,7 +1615,7 @@ This method is to be used together with setAuth(..)</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/Core7.php"><a href="files/src-core7.html"><abbr title="src/Core7.php">Core7.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">5381</span>
+    <span class="phpdocumentor-element-found-in__line">5523</span>
 
     </aside>
 
@@ -1411,7 +1651,7 @@ This method is to be used together with setAuth(..)</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/Core7.php"><a href="files/src-core7.html"><abbr title="src/Core7.php">Core7.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">5372</span>
+    <span class="phpdocumentor-element-found-in__line">5514</span>
 
     </aside>
 
@@ -1447,7 +1687,7 @@ This method is to be used together with setAuth(..)</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/Core7.php"><a href="files/src-core7.html"><abbr title="src/Core7.php">Core7.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">5329</span>
+    <span class="phpdocumentor-element-found-in__line">5471</span>
 
     </aside>
 
@@ -1483,7 +1723,7 @@ This method is to be used together with setAuth(..)</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/Core7.php"><a href="files/src-core7.html"><abbr title="src/Core7.php">Core7.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">5399</span>
+    <span class="phpdocumentor-element-found-in__line">5541</span>
 
     </aside>
 
@@ -1519,7 +1759,7 @@ This method is to be used together with setAuth(..)</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/Core7.php"><a href="files/src-core7.html"><abbr title="src/Core7.php">Core7.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">5350</span>
+    <span class="phpdocumentor-element-found-in__line">5492</span>
 
     </aside>
 
@@ -1565,7 +1805,7 @@ This method is to be used together with setAuth(..)</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/Core7.php"><a href="files/src-core7.html"><abbr title="src/Core7.php">Core7.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">5318</span>
+    <span class="phpdocumentor-element-found-in__line">5460</span>
 
     </aside>
 
@@ -1611,7 +1851,7 @@ This method is to be used together with setAuth(..)</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/Core7.php"><a href="files/src-core7.html"><abbr title="src/Core7.php">Core7.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">5285</span>
+    <span class="phpdocumentor-element-found-in__line">5427</span>
 
     </aside>
 
@@ -1647,7 +1887,7 @@ This method is to be used together with setAuth(..)</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/Core7.php"><a href="files/src-core7.html"><abbr title="src/Core7.php">Core7.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">5390</span>
+    <span class="phpdocumentor-element-found-in__line">5532</span>
 
     </aside>
 
@@ -1675,6 +1915,74 @@ This method is to be used together with setAuth(..)</p>
             -public
                                                         "
 >
+    <h4 class="phpdocumentor-element__name" id="method_loginCloudPlatform">
+        loginCloudPlatform()
+        <a href="classes/CoreUser.html#method_loginCloudPlatform" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/Core7.php"><a href="files/src-core7.html"><abbr title="src/Core7.php">Core7.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">5006</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Execute a sign-in over the CLOUD-PLATFORM using $user/$password in $platform_id
+and store the token and user info in $this-&gt;token, $this-&gt;data</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">loginCloudPlatform</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$user</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$password</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$platform_id</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$integration_key</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool|void</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$user</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$password</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$platform_id</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$integration_key</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">bool|void</span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+            -deprecated                                            "
+>
     <h4 class="phpdocumentor-element__name" id="method_loginERP">
         loginERP()
         <a href="classes/CoreUser.html#method_loginERP" class="headerlink"><i class="fas fa-link"></i></a>
@@ -1683,13 +1991,13 @@ This method is to be used together with setAuth(..)</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/Core7.php"><a href="files/src-core7.html"><abbr title="src/Core7.php">Core7.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">4993</span>
+    <span class="phpdocumentor-element-found-in__line">5077</span>
 
     </aside>
 
-        <p class="phpdocumentor-summary">Generate Token from ERP login</p>
+        <p class="phpdocumentor-summary">Deprecated. Use loginCloudPlatform</p>
 
-    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <code class="phpdocumentor-code phpdocumentor-signature -deprecated">
     <span class="phpdocumentor-signature__visibility">public</span>
                     <span class="phpdocumentor-signature__name">loginERP</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href=""></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$user</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type"><a href=""></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$password</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type"><a href=""></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$namespace</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type"><a href=""></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$integration_key</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool|void</span></code>
 
@@ -1729,6 +2037,20 @@ This method is to be used together with setAuth(..)</p>
             </dl>
 
     
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="classes/CoreUser.html#method_loginERP#tags" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">deprecated</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                                
+                                             
+                                    </dd>
+                                            </dl>
 
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
@@ -1750,7 +2072,7 @@ This method is to be used together with setAuth(..)</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/Core7.php"><a href="files/src-core7.html"><abbr title="src/Core7.php">Core7.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">5059</span>
+    <span class="phpdocumentor-element-found-in__line">5088</span>
 
     </aside>
 
@@ -1803,7 +2125,7 @@ This method is to be used together with setAuth(..)</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/Core7.php"><a href="files/src-core7.html"><abbr title="src/Core7.php">Core7.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">4952</span>
+    <span class="phpdocumentor-element-found-in__line">4964</span>
 
     </aside>
 
@@ -1856,7 +2178,7 @@ This method is to be used together with setAuth(..)</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/Core7.php"><a href="files/src-core7.html"><abbr title="src/Core7.php">Core7.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">4798</span>
+    <span class="phpdocumentor-element-found-in__line">4806</span>
 
     </aside>
 
@@ -1888,7 +2210,7 @@ This method is to be used together with setAuth(..)</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/Core7.php"><a href="files/src-core7.html"><abbr title="src/Core7.php">Core7.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">4815</span>
+    <span class="phpdocumentor-element-found-in__line">4824</span>
 
     </aside>
 
@@ -1958,7 +2280,7 @@ This method is to be used together with setAuth(..)</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/Core7.php"><a href="files/src-core7.html"><abbr title="src/Core7.php">Core7.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">5430</span>
+    <span class="phpdocumentor-element-found-in__line">5572</span>
 
     </aside>
 
@@ -2000,7 +2322,7 @@ This method is to be used together with setAuth(..)</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/Core7.php"><a href="files/src-core7.html"><abbr title="src/Core7.php">Core7.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">5339</span>
+    <span class="phpdocumentor-element-found-in__line">5481</span>
 
     </aside>
 
@@ -2049,7 +2371,7 @@ This method is to be used together with setAuth(..)</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/Core7.php"><a href="files/src-core7.html"><abbr title="src/Core7.php">Core7.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">5295</span>
+    <span class="phpdocumentor-element-found-in__line">5437</span>
 
     </aside>
 
@@ -2098,7 +2420,7 @@ This method is to be used together with setAuth(..)</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/Core7.php"><a href="files/src-core7.html"><abbr title="src/Core7.php">Core7.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">5360</span>
+    <span class="phpdocumentor-element-found-in__line">5502</span>
 
     </aside>
 
@@ -2140,7 +2462,7 @@ This method is to be used together with setAuth(..)</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/Core7.php"><a href="files/src-core7.html"><abbr title="src/Core7.php">Core7.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">5306</span>
+    <span class="phpdocumentor-element-found-in__line">5448</span>
 
     </aside>
 
@@ -2182,7 +2504,7 @@ This method is to be used together with setAuth(..)</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/Core7.php"><a href="files/src-core7.html"><abbr title="src/Core7.php">Core7.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">5261</span>
+    <span class="phpdocumentor-element-found-in__line">5403</span>
 
     </aside>
 
@@ -2317,6 +2639,7 @@ This method is to be used together with setAuth(..)</p>
                             <li class="phpdocumentor-on-this-page-section__title">Constants</li>
                 <li>
                     <ul class="phpdocumentor-list -clean">
+                                                    <li><a href="classes/CoreUser.html#constant_APIPortalServices">APIPortalServices</a></li>
                                                     <li><a href="classes/CoreUser.html#constant_APIServices">APIServices</a></li>
                                             </ul>
                 </li>
@@ -2337,6 +2660,7 @@ This method is to be used together with setAuth(..)</p>
                                                     <li><a href="classes/CoreUser.html#property_namespace">$namespace<a href="classes/CoreUser.html"></li>
                                                     <li><a href="classes/CoreUser.html#property_token">$token<a href="classes/CoreUser.html"></li>
                                                     <li><a href="classes/CoreUser.html#property_tokenExpiration">$tokenExpiration<a href="classes/CoreUser.html"></li>
+                                                    <li><a href="classes/CoreUser.html#property_core">$core<a href="classes/CoreUser.html"></li>
                                             </ul>
                 </li>
             
@@ -2347,7 +2671,9 @@ This method is to be used together with setAuth(..)</p>
                                             <li><a href="classes/CoreUser.html#method_addError">addError()</a></li>
                                             <li><a href="classes/CoreUser.html#method_addUserData">addUserData()</a></li>
                                             <li><a href="classes/CoreUser.html#method_checkERPToken">checkERPToken()</a></li>
+                                            <li><a href="classes/CoreUser.html#method_checkPlatformToken">checkPlatformToken()</a></li>
                                             <li><a href="classes/CoreUser.html#method_checkUserToken">checkUserToken()</a></li>
+                                            <li><a href="classes/CoreUser.html#method_checkWebToken">checkWebToken()</a></li>
                                             <li><a href="classes/CoreUser.html#method_createUserToken">createUserToken()</a></li>
                                             <li><a href="classes/CoreUser.html#method_getDateTime">getDateTime()</a></li>
                                             <li><a href="classes/CoreUser.html#method_getLang">getLang()</a></li>
@@ -2358,6 +2684,7 @@ This method is to be used together with setAuth(..)</p>
                                             <li><a href="classes/CoreUser.html#method_hasPrivilege">hasPrivilege()</a></li>
                                             <li><a href="classes/CoreUser.html#method_isAuth">isAuth()</a></li>
                                             <li><a href="classes/CoreUser.html#method_isPortalUser">isPortalUser()</a></li>
+                                            <li><a href="classes/CoreUser.html#method_loginCloudPlatform">loginCloudPlatform()</a></li>
                                             <li><a href="classes/CoreUser.html#method_loginERP">loginERP()</a></li>
                                             <li><a href="classes/CoreUser.html#method_logoutERPToken">logoutERPToken()</a></li>
                                             <li><a href="classes/CoreUser.html#method_logoutUserToken">logoutUserToken()</a></li>

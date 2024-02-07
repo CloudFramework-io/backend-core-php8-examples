@@ -274,6 +274,18 @@
                         &nbsp;: mixed            </span>
 </dt>
 
+            <dt class="phpdocumentor-table-of-contents__entry -property -protected">
+    <a href="classes/DataMongoDB.html#property__client">$_client</a>
+    <span>
+                        &nbsp;: <abbr title="\MongoDB\Client">Client</abbr>            </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -property -protected">
+    <a href="classes/DataMongoDB.html#property_core">$core</a>
+    <span>
+                        &nbsp;: <a href="classes/Core7.html"><abbr title="\Core7">Core7</abbr></a>            </span>
+</dt>
+
     </dl>
 
 <h4 id="toc-methods">
@@ -374,6 +386,27 @@ https://docs.mongodb.com/php-library/current/reference/method/MongoDBCollection-
 </dt>
 <dd>Execute an update of one document. This document requires a _id field
 https://docs.mongodb.com/php-library/current/reference/method/MongoDBCollection-insertOne/</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -private">
+    <a href="classes/DataMongoDB.html#method_connectWithCollection">connectWithCollection()</a>
+    <span>
+                                &nbsp;: mixed|<abbr title="\MongoDB\Collection">Collection</abbr>    </span>
+</dt>
+<dd>Return a Collection to operate with</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -private">
+    <a href="classes/DataMongoDB.html#method_prepareTypes">prepareTypes()</a>
+    <span>
+                                &nbsp;: void    </span>
+</dt>
+<dd>Transform _id fields and date contents into MongoDB objects</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -private">
+    <a href="classes/DataMongoDB.html#method_transformTypes">transformTypes()</a>
+    <span>
+                                &nbsp;: void    </span>
+</dt>
+<dd>Transform Mongo objects in arrays, strings , numbers</dd>
 
     </dl>
 
@@ -680,6 +713,72 @@ https://docs.mongodb.com/php-library/current/reference/method/MongoDBCollection-
         <span class="phpdocumentor-signature__type">mixed</span>
     <span class="phpdocumentor-signature__name">$uri</span>
      = <span class="phpdocumentor-signature__default-value">&#039;&#039;</span></code>
+
+    
+    
+    
+
+</article>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -protected
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="property__client">
+        $_client
+        <a href="classes/DataMongoDB.html#property__client" class="headerlink"><i class="fas fa-link"></i></a>
+
+        <span class="phpdocumentor-element__modifiers">
+                                </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/class/DataMongoDB.php"><a href="files/src-class-datamongodb.html"><abbr title="src/class/DataMongoDB.php">DataMongoDB.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">25</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">protected</span>
+        <span class="phpdocumentor-signature__type"><abbr title="\MongoDB\Client">Client</abbr></span>
+    <span class="phpdocumentor-signature__name">$_client</span>
+     = <span class="phpdocumentor-signature__default-value">\null</span></code>
+
+    
+    
+    
+
+</article>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -protected
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="property_core">
+        $core
+        <a href="classes/DataMongoDB.html#property_core" class="headerlink"><i class="fas fa-link"></i></a>
+
+        <span class="phpdocumentor-element__modifiers">
+                                </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/class/DataMongoDB.php"><a href="files/src-class-datamongodb.html"><abbr title="src/class/DataMongoDB.php">DataMongoDB.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">20</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">protected</span>
+        <span class="phpdocumentor-signature__type"><a href="classes/Core7.html"><abbr title="\Core7">Core7</abbr></a></span>
+    <span class="phpdocumentor-signature__name">$core</span>
+    </code>
 
     
     
@@ -1392,6 +1491,157 @@ https://docs.mongodb.com/php-library/current/reference/method/MongoDBCollection-
             </section>
 
 </article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -private
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_connectWithCollection">
+        connectWithCollection()
+        <a href="classes/DataMongoDB.html#method_connectWithCollection" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/class/DataMongoDB.php"><a href="files/src-class-datamongodb.html"><abbr title="src/class/DataMongoDB.php">DataMongoDB.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">476</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Return a Collection to operate with</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">private</span>
+                    <span class="phpdocumentor-signature__name">connectWithCollection</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href=""></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$db</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type"><a href=""></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$collection</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed|<abbr title="\MongoDB\Collection">Collection</abbr></span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$db</span>
+                : <span class="phpdocumentor-signature__argument__return-type"><a href=""></a></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$collection</span>
+                : <span class="phpdocumentor-signature__argument__return-type"><a href=""></a></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">mixed|<abbr title="\MongoDB\Collection">Collection</abbr></span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -private
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_prepareTypes">
+        prepareTypes()
+        <a href="classes/DataMongoDB.html#method_prepareTypes" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/class/DataMongoDB.php"><a href="files/src-class-datamongodb.html"><abbr title="src/class/DataMongoDB.php">DataMongoDB.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">427</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Transform _id fields and date contents into MongoDB objects</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">private</span>
+                    <span class="phpdocumentor-signature__name">prepareTypes</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__reference-operator">&amp;</span><span class="phpdocumentor-signature__argument__name">$entity</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$level</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">0</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$entity</span>
+                : <span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$level</span>
+                : <span class="phpdocumentor-signature__argument__return-type">int</span>
+                 = <span class="phpdocumentor-signature__argument__default-value">0</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -private
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_transformTypes">
+        transformTypes()
+        <a href="classes/DataMongoDB.html#method_transformTypes" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/class/DataMongoDB.php"><a href="files/src-class-datamongodb.html"><abbr title="src/class/DataMongoDB.php">DataMongoDB.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">448</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Transform Mongo objects in arrays, strings , numbers</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">private</span>
+                    <span class="phpdocumentor-signature__name">transformTypes</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__reference-operator">&amp;</span><span class="phpdocumentor-signature__argument__name">$entity</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$level</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">0</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$entity</span>
+                : <span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$level</span>
+                : <span class="phpdocumentor-signature__argument__return-type">int</span>
+                 = <span class="phpdocumentor-signature__argument__default-value">0</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+    
+</article>
             </section>
 
         <div class="phpdocumentor-modal" id="source-view">
@@ -1514,6 +1764,8 @@ https://docs.mongodb.com/php-library/current/reference/method/MongoDBCollection-
                                                     <li><a href="classes/DataMongoDB.html#property_page">$page<a href="classes/DataMongoDB.html"></li>
                                                     <li><a href="classes/DataMongoDB.html#property_sendSysLogs">$sendSysLogs<a href="classes/DataMongoDB.html"></li>
                                                     <li><a href="classes/DataMongoDB.html#property_uri">$uri<a href="classes/DataMongoDB.html"></li>
+                                                    <li><a href="classes/DataMongoDB.html#property__client">$_client<a href="classes/DataMongoDB.html"></li>
+                                                    <li><a href="classes/DataMongoDB.html#property_core">$core<a href="classes/DataMongoDB.html"></li>
                                             </ul>
                 </li>
             
@@ -1533,6 +1785,9 @@ https://docs.mongodb.com/php-library/current/reference/method/MongoDBCollection-
                                             <li><a href="classes/DataMongoDB.html#method_getLastQuery">getLastQuery()</a></li>
                                             <li><a href="classes/DataMongoDB.html#method_insertDocuments">insertDocuments()</a></li>
                                             <li><a href="classes/DataMongoDB.html#method_updateDocumentWithId">updateDocumentWithId()</a></li>
+                                            <li><a href="classes/DataMongoDB.html#method_connectWithCollection">connectWithCollection()</a></li>
+                                            <li><a href="classes/DataMongoDB.html#method_prepareTypes">prepareTypes()</a></li>
+                                            <li><a href="classes/DataMongoDB.html#method_transformTypes">transformTypes()</a></li>
                                     </ul>
             </li>
                     </ul>

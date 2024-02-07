@@ -191,7 +191,7 @@
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/Core7.php"><a href="files/src-core7.html"><abbr title="src/Core7.php">Core7.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">5484</span>
+    <span class="phpdocumentor-element-found-in__line">5626</span>
 
     </aside>
 
@@ -253,6 +253,12 @@
 </dt>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -public">
+    <a href="classes/CoreLocalization.html#property_auto_reset">$auto_reset</a>
+    <span>
+                        &nbsp;: mixed            </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -property -public">
     <a href="classes/CoreLocalization.html#property_cacheExpiration">$cacheExpiration</a>
     <span>
                         &nbsp;: mixed            </span>
@@ -290,6 +296,18 @@
 
             <dt class="phpdocumentor-table-of-contents__entry -property -public">
     <a href="classes/CoreLocalization.html#property_reset_files">$reset_files</a>
+    <span>
+                        &nbsp;: mixed            </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -property -protected">
+    <a href="classes/CoreLocalization.html#property_core">$core</a>
+    <span>
+                        &nbsp;: mixed            </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -property -private">
+    <a href="classes/CoreLocalization.html#property_init">$init</a>
     <span>
                         &nbsp;: mixed            </span>
 </dt>
@@ -374,7 +392,8 @@
     <span>
                                 &nbsp;: mixed|string    </span>
 </dt>
-<dd>Get a Localization code from a localization file</dd>
+<dd>Get a Localization code from a localization file
+If the tag is not found and $this-&gt;auto_reset is true it will try to load the dictionary agaain.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/CoreLocalization.html#method_initLocalizationService">initLocalizationService()</a>
@@ -468,7 +487,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/Core7.php"><a href="files/src-core7.html"><abbr title="src/Core7.php">Core7.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">5499</span>
+    <span class="phpdocumentor-element-found-in__line">5642</span>
 
     </aside>
 
@@ -501,7 +520,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/Core7.php"><a href="files/src-core7.html"><abbr title="src/Core7.php">Core7.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">5498</span>
+    <span class="phpdocumentor-element-found-in__line">5641</span>
 
     </aside>
 
@@ -534,7 +553,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/Core7.php"><a href="files/src-core7.html"><abbr title="src/Core7.php">Core7.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">5496</span>
+    <span class="phpdocumentor-element-found-in__line">5639</span>
 
     </aside>
 
@@ -567,7 +586,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/Core7.php"><a href="files/src-core7.html"><abbr title="src/Core7.php">Core7.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">5495</span>
+    <span class="phpdocumentor-element-found-in__line">5638</span>
 
     </aside>
 
@@ -600,7 +619,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/Core7.php"><a href="files/src-core7.html"><abbr title="src/Core7.php">Core7.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">5497</span>
+    <span class="phpdocumentor-element-found-in__line">5640</span>
 
     </aside>
 
@@ -610,6 +629,39 @@
         <span class="phpdocumentor-signature__type">mixed</span>
     <span class="phpdocumentor-signature__name">$api_user</span>
      = <span class="phpdocumentor-signature__default-value">&#039;user-unknown&#039;</span></code>
+
+    
+    
+    
+
+</article>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="property_auto_reset">
+        $auto_reset
+        <a href="classes/CoreLocalization.html#property_auto_reset" class="headerlink"><i class="fas fa-link"></i></a>
+
+        <span class="phpdocumentor-element__modifiers">
+                                </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/Core7.php"><a href="files/src-core7.html"><abbr title="src/Core7.php">Core7.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">5630</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+        <span class="phpdocumentor-signature__type">mixed</span>
+    <span class="phpdocumentor-signature__name">$auto_reset</span>
+     = <span class="phpdocumentor-signature__default-value">\false</span></code>
 
     
     
@@ -633,7 +685,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/Core7.php"><a href="files/src-core7.html"><abbr title="src/Core7.php">Core7.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">5490</span>
+    <span class="phpdocumentor-element-found-in__line">5633</span>
 
     </aside>
 
@@ -666,7 +718,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/Core7.php"><a href="files/src-core7.html"><abbr title="src/Core7.php">Core7.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">5487</span>
+    <span class="phpdocumentor-element-found-in__line">5629</span>
 
     </aside>
 
@@ -699,7 +751,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/Core7.php"><a href="files/src-core7.html"><abbr title="src/Core7.php">Core7.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">5492</span>
+    <span class="phpdocumentor-element-found-in__line">5635</span>
 
     </aside>
 
@@ -732,7 +784,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/Core7.php"><a href="files/src-core7.html"><abbr title="src/Core7.php">Core7.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">5493</span>
+    <span class="phpdocumentor-element-found-in__line">5636</span>
 
     </aside>
 
@@ -765,7 +817,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/Core7.php"><a href="files/src-core7.html"><abbr title="src/Core7.php">Core7.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">5500</span>
+    <span class="phpdocumentor-element-found-in__line">5643</span>
 
     </aside>
 
@@ -798,7 +850,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/Core7.php"><a href="files/src-core7.html"><abbr title="src/Core7.php">Core7.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">5488</span>
+    <span class="phpdocumentor-element-found-in__line">5631</span>
 
     </aside>
 
@@ -831,7 +883,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/Core7.php"><a href="files/src-core7.html"><abbr title="src/Core7.php">Core7.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">5489</span>
+    <span class="phpdocumentor-element-found-in__line">5632</span>
 
     </aside>
 
@@ -841,6 +893,72 @@
         <span class="phpdocumentor-signature__type">mixed</span>
     <span class="phpdocumentor-signature__name">$reset_files</span>
      = <span class="phpdocumentor-signature__default-value">[]</span></code>
+
+    
+    
+    
+
+</article>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -protected
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="property_core">
+        $core
+        <a href="classes/CoreLocalization.html#property_core" class="headerlink"><i class="fas fa-link"></i></a>
+
+        <span class="phpdocumentor-element__modifiers">
+                                </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/Core7.php"><a href="files/src-core7.html"><abbr title="src/Core7.php">Core7.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">5628</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">protected</span>
+        <span class="phpdocumentor-signature__type">mixed</span>
+    <span class="phpdocumentor-signature__name">$core</span>
+    </code>
+
+    
+    
+    
+
+</article>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -private
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="property_init">
+        $init
+        <a href="classes/CoreLocalization.html#property_init" class="headerlink"><i class="fas fa-link"></i></a>
+
+        <span class="phpdocumentor-element__modifiers">
+                                </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/Core7.php"><a href="files/src-core7.html"><abbr title="src/Core7.php">Core7.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">5634</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">private</span>
+        <span class="phpdocumentor-signature__type">mixed</span>
+    <span class="phpdocumentor-signature__name">$init</span>
+     = <span class="phpdocumentor-signature__default-value">\false</span></code>
 
     
     
@@ -869,7 +987,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/Core7.php"><a href="files/src-core7.html"><abbr title="src/Core7.php">Core7.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">5502</span>
+    <span class="phpdocumentor-element-found-in__line">5645</span>
 
     </aside>
 
@@ -910,7 +1028,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/Core7.php"><a href="files/src-core7.html"><abbr title="src/Core7.php">Core7.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">5803</span>
+    <span class="phpdocumentor-element-found-in__line">5965</span>
 
     </aside>
 
@@ -951,7 +1069,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/Core7.php"><a href="files/src-core7.html"><abbr title="src/Core7.php">Core7.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">5613</span>
+    <span class="phpdocumentor-element-found-in__line">5756</span>
 
     </aside>
 
@@ -1009,7 +1127,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/Core7.php"><a href="files/src-core7.html"><abbr title="src/Core7.php">Core7.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">5598</span>
+    <span class="phpdocumentor-element-found-in__line">5741</span>
 
     </aside>
 
@@ -1071,7 +1189,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/Core7.php"><a href="files/src-core7.html"><abbr title="src/Core7.php">Core7.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">5630</span>
+    <span class="phpdocumentor-element-found-in__line">5773</span>
 
     </aside>
 
@@ -1142,7 +1260,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/Core7.php"><a href="files/src-core7.html"><abbr title="src/Core7.php">Core7.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">5738</span>
+    <span class="phpdocumentor-element-found-in__line">5900</span>
 
     </aside>
 
@@ -1195,7 +1313,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/Core7.php"><a href="files/src-core7.html"><abbr title="src/Core7.php">Core7.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">5578</span>
+    <span class="phpdocumentor-element-found-in__line">5721</span>
 
     </aside>
 
@@ -1250,7 +1368,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/Core7.php"><a href="files/src-core7.html"><abbr title="src/Core7.php">Core7.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">5692</span>
+    <span class="phpdocumentor-element-found-in__line">5854</span>
 
     </aside>
 
@@ -1321,7 +1439,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/Core7.php"><a href="files/src-core7.html"><abbr title="src/Core7.php">Core7.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">5533</span>
+    <span class="phpdocumentor-element-found-in__line">5676</span>
 
     </aside>
 
@@ -1357,7 +1475,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/Core7.php"><a href="files/src-core7.html"><abbr title="src/Core7.php">Core7.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">5525</span>
+    <span class="phpdocumentor-element-found-in__line">5668</span>
 
     </aside>
 
@@ -1393,11 +1511,12 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/Core7.php"><a href="files/src-core7.html"><abbr title="src/Core7.php">Core7.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">5661</span>
+    <span class="phpdocumentor-element-found-in__line">5805</span>
 
     </aside>
 
-        <p class="phpdocumentor-summary">Get a Localization code from a localization file</p>
+        <p class="phpdocumentor-summary">Get a Localization code from a localization file
+If the tag is not found and $this-&gt;auto_reset is true it will try to load the dictionary agaain.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
@@ -1457,7 +1576,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/Core7.php"><a href="files/src-core7.html"><abbr title="src/Core7.php">Core7.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">5514</span>
+    <span class="phpdocumentor-element-found-in__line">5657</span>
 
     </aside>
 
@@ -1520,7 +1639,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/Core7.php"><a href="files/src-core7.html"><abbr title="src/Core7.php">Core7.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">5764</span>
+    <span class="phpdocumentor-element-found-in__line">5926</span>
 
     </aside>
 
@@ -1575,7 +1694,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/Core7.php"><a href="files/src-core7.html"><abbr title="src/Core7.php">Core7.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">5726</span>
+    <span class="phpdocumentor-element-found-in__line">5888</span>
 
     </aside>
 
@@ -1607,7 +1726,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/Core7.php"><a href="files/src-core7.html"><abbr title="src/Core7.php">Core7.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">5720</span>
+    <span class="phpdocumentor-element-found-in__line">5882</span>
 
     </aside>
 
@@ -1685,7 +1804,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/Core7.php"><a href="files/src-core7.html"><abbr title="src/Core7.php">Core7.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">5550</span>
+    <span class="phpdocumentor-element-found-in__line">5693</span>
 
     </aside>
 
@@ -1727,7 +1846,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/Core7.php"><a href="files/src-core7.html"><abbr title="src/Core7.php">Core7.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">5558</span>
+    <span class="phpdocumentor-element-found-in__line">5701</span>
 
     </aside>
 
@@ -1769,7 +1888,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/Core7.php"><a href="files/src-core7.html"><abbr title="src/Core7.php">Core7.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">5542</span>
+    <span class="phpdocumentor-element-found-in__line">5685</span>
 
     </aside>
 
@@ -1811,7 +1930,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/Core7.php"><a href="files/src-core7.html"><abbr title="src/Core7.php">Core7.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">5567</span>
+    <span class="phpdocumentor-element-found-in__line">5710</span>
 
     </aside>
 
@@ -1853,7 +1972,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/Core7.php"><a href="files/src-core7.html"><abbr title="src/Core7.php">Core7.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">5702</span>
+    <span class="phpdocumentor-element-found-in__line">5864</span>
 
     </aside>
 
@@ -2026,6 +2145,7 @@
                                                     <li><a href="classes/CoreLocalization.html#property_api_namespace">$api_namespace<a href="classes/CoreLocalization.html"></li>
                                                     <li><a href="classes/CoreLocalization.html#property_api_service">$api_service<a href="classes/CoreLocalization.html"></li>
                                                     <li><a href="classes/CoreLocalization.html#property_api_user">$api_user<a href="classes/CoreLocalization.html"></li>
+                                                    <li><a href="classes/CoreLocalization.html#property_auto_reset">$auto_reset<a href="classes/CoreLocalization.html"></li>
                                                     <li><a href="classes/CoreLocalization.html#property_cacheExpiration">$cacheExpiration<a href="classes/CoreLocalization.html"></li>
                                                     <li><a href="classes/CoreLocalization.html#property_data">$data<a href="classes/CoreLocalization.html"></li>
                                                     <li><a href="classes/CoreLocalization.html#property_error">$error<a href="classes/CoreLocalization.html"></li>
@@ -2033,6 +2153,8 @@
                                                     <li><a href="classes/CoreLocalization.html#property_localize_files">$localize_files<a href="classes/CoreLocalization.html"></li>
                                                     <li><a href="classes/CoreLocalization.html#property_reset">$reset<a href="classes/CoreLocalization.html"></li>
                                                     <li><a href="classes/CoreLocalization.html#property_reset_files">$reset_files<a href="classes/CoreLocalization.html"></li>
+                                                    <li><a href="classes/CoreLocalization.html#property_core">$core<a href="classes/CoreLocalization.html"></li>
+                                                    <li><a href="classes/CoreLocalization.html#property_init">$init<a href="classes/CoreLocalization.html"></li>
                                             </ul>
                 </li>
             

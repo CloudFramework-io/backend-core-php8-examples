@@ -214,6 +214,85 @@
 
 
 
+<h4 id="toc-properties">
+    Properties
+    <a href="classes/SendGridMail.html#toc-properties" class="headerlink"><i class="fas fa-link"></i></a>
+
+</h4>
+<dl class="phpdocumentor-table-of-contents">
+            <dt class="phpdocumentor-table-of-contents__entry -property -protected">
+    <a href="classes/SendGridMail.html#property_use_headers">$use_headers</a>
+    <span>
+                        &nbsp;: mixed            </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -property -private">
+    <a href="classes/SendGridMail.html#property_attachment_list">$attachment_list</a>
+    <span>
+                        &nbsp;: mixed            </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -property -private">
+    <a href="classes/SendGridMail.html#property_bcc_list">$bcc_list</a>
+    <span>
+                        &nbsp;: mixed            </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -property -private">
+    <a href="classes/SendGridMail.html#property_cc_list">$cc_list</a>
+    <span>
+                        &nbsp;: mixed            </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -property -private">
+    <a href="classes/SendGridMail.html#property_from">$from</a>
+    <span>
+                        &nbsp;: mixed            </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -property -private">
+    <a href="classes/SendGridMail.html#property_from_name">$from_name</a>
+    <span>
+                        &nbsp;: mixed            </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -property -private">
+    <a href="classes/SendGridMail.html#property_header_list">$header_list</a>
+    <span>
+                        &nbsp;: mixed            </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -property -private">
+    <a href="classes/SendGridMail.html#property_html">$html</a>
+    <span>
+                        &nbsp;: mixed            </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -property -private">
+    <a href="classes/SendGridMail.html#property_reply_to">$reply_to</a>
+    <span>
+                        &nbsp;: mixed            </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -property -private">
+    <a href="classes/SendGridMail.html#property_subject">$subject</a>
+    <span>
+                        &nbsp;: mixed            </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -property -private">
+    <a href="classes/SendGridMail.html#property_text">$text</a>
+    <span>
+                        &nbsp;: mixed            </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -property -private">
+    <a href="classes/SendGridMail.html#property_to_list">$to_list</a>
+    <span>
+                        &nbsp;: mixed            </span>
+</dt>
+
+    </dl>
 
 <h4 id="toc-methods">
     Methods
@@ -647,6 +726,41 @@ we prefer to send our recipients through the headers, but in some cases,
 we actually don&#039;t want to. However, there are certain circumstances in
 which we have to.</dd>
 
+            <dt class="phpdocumentor-table-of-contents__entry -method -protected">
+    <a href="classes/SendGridMail.html#method__isHeadersRequired">_isHeadersRequired()</a>
+    <span>
+                                &nbsp;: bool    </span>
+</dt>
+<dd>isHeaderRequired
+determines whether or not we need to force recipients through the smtpapi headers</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -protected">
+    <a href="classes/SendGridMail.html#method__preferNotToUseHeaders">_preferNotToUseHeaders()</a>
+    <span>
+                                &nbsp;: bool    </span>
+</dt>
+<dd>_preferNotToUseHeaders
+There are certain cases in which headers are not a preferred choice
+to send email, as it limits some basic email functionality. Here, we
+check for any of those rules, and add them in to decide whether or
+not to use headers</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -private">
+    <a href="classes/SendGridMail.html#method__getAttachmentInfo">_getAttachmentInfo()</a>
+    <span>
+                                &nbsp;: array&lt;string|int, mixed&gt;    </span>
+</dt>
+<dd>get file details</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -private">
+    <a href="classes/SendGridMail.html#method__removeFromList">_removeFromList()</a>
+    <span>
+                                &nbsp;: mixed    </span>
+</dt>
+<dd>_removeFromList
+Given a list of key/value pairs, removes the associated keys
+where a value matches the given string ($item)</dd>
+
     </dl>
 
 
@@ -655,6 +769,409 @@ which we have to.</dd>
         
 
         
+    <section class="phpdocumentor-properties">
+        <h3 class="phpdocumentor-elements__header" id="properties">
+            Properties
+            <a href="classes/SendGridMail.html#properties" class="headerlink"><i class="fas fa-link"></i></a>
+
+        </h3>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -protected
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="property_use_headers">
+        $use_headers
+        <a href="classes/SendGridMail.html#property_use_headers" class="headerlink"><i class="fas fa-link"></i></a>
+
+        <span class="phpdocumentor-element__modifiers">
+                                </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/class/Email.php"><a href="files/src-class-email.html"><abbr title="src/class/Email.php">Email.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">379</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">protected</span>
+        <span class="phpdocumentor-signature__type">mixed</span>
+    <span class="phpdocumentor-signature__name">$use_headers</span>
+    </code>
+
+    
+    
+    
+
+</article>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -private
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="property_attachment_list">
+        $attachment_list
+        <a href="classes/SendGridMail.html#property_attachment_list" class="headerlink"><i class="fas fa-link"></i></a>
+
+        <span class="phpdocumentor-element__modifiers">
+                                </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/class/Email.php"><a href="files/src-class-email.html"><abbr title="src/class/Email.php">Email.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">367</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">private</span>
+        <span class="phpdocumentor-signature__type">mixed</span>
+    <span class="phpdocumentor-signature__name">$attachment_list</span>
+    </code>
+
+    
+    
+    
+
+</article>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -private
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="property_bcc_list">
+        $bcc_list
+        <a href="classes/SendGridMail.html#property_bcc_list" class="headerlink"><i class="fas fa-link"></i></a>
+
+        <span class="phpdocumentor-element__modifiers">
+                                </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/class/Email.php"><a href="files/src-class-email.html"><abbr title="src/class/Email.php">Email.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">367</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">private</span>
+        <span class="phpdocumentor-signature__type">mixed</span>
+    <span class="phpdocumentor-signature__name">$bcc_list</span>
+    </code>
+
+    
+    
+    
+
+</article>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -private
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="property_cc_list">
+        $cc_list
+        <a href="classes/SendGridMail.html#property_cc_list" class="headerlink"><i class="fas fa-link"></i></a>
+
+        <span class="phpdocumentor-element__modifiers">
+                                </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/class/Email.php"><a href="files/src-class-email.html"><abbr title="src/class/Email.php">Email.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">367</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">private</span>
+        <span class="phpdocumentor-signature__type">mixed</span>
+    <span class="phpdocumentor-signature__name">$cc_list</span>
+    </code>
+
+    
+    
+    
+
+</article>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -private
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="property_from">
+        $from
+        <a href="classes/SendGridMail.html#property_from" class="headerlink"><i class="fas fa-link"></i></a>
+
+        <span class="phpdocumentor-element__modifiers">
+                                </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/class/Email.php"><a href="files/src-class-email.html"><abbr title="src/class/Email.php">Email.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">367</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">private</span>
+        <span class="phpdocumentor-signature__type">mixed</span>
+    <span class="phpdocumentor-signature__name">$from</span>
+    </code>
+
+    
+    
+    
+
+</article>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -private
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="property_from_name">
+        $from_name
+        <a href="classes/SendGridMail.html#property_from_name" class="headerlink"><i class="fas fa-link"></i></a>
+
+        <span class="phpdocumentor-element__modifiers">
+                                </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/class/Email.php"><a href="files/src-class-email.html"><abbr title="src/class/Email.php">Email.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">367</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">private</span>
+        <span class="phpdocumentor-signature__type">mixed</span>
+    <span class="phpdocumentor-signature__name">$from_name</span>
+    </code>
+
+    
+    
+    
+
+</article>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -private
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="property_header_list">
+        $header_list
+        <a href="classes/SendGridMail.html#property_header_list" class="headerlink"><i class="fas fa-link"></i></a>
+
+        <span class="phpdocumentor-element__modifiers">
+                                </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/class/Email.php"><a href="files/src-class-email.html"><abbr title="src/class/Email.php">Email.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">367</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">private</span>
+        <span class="phpdocumentor-signature__type">mixed</span>
+    <span class="phpdocumentor-signature__name">$header_list</span>
+     = <span class="phpdocumentor-signature__default-value">array()</span></code>
+
+    
+    
+    
+
+</article>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -private
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="property_html">
+        $html
+        <a href="classes/SendGridMail.html#property_html" class="headerlink"><i class="fas fa-link"></i></a>
+
+        <span class="phpdocumentor-element__modifiers">
+                                </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/class/Email.php"><a href="files/src-class-email.html"><abbr title="src/class/Email.php">Email.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">367</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">private</span>
+        <span class="phpdocumentor-signature__type">mixed</span>
+    <span class="phpdocumentor-signature__name">$html</span>
+    </code>
+
+    
+    
+    
+
+</article>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -private
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="property_reply_to">
+        $reply_to
+        <a href="classes/SendGridMail.html#property_reply_to" class="headerlink"><i class="fas fa-link"></i></a>
+
+        <span class="phpdocumentor-element__modifiers">
+                                </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/class/Email.php"><a href="files/src-class-email.html"><abbr title="src/class/Email.php">Email.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">367</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">private</span>
+        <span class="phpdocumentor-signature__type">mixed</span>
+    <span class="phpdocumentor-signature__name">$reply_to</span>
+    </code>
+
+    
+    
+    
+
+</article>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -private
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="property_subject">
+        $subject
+        <a href="classes/SendGridMail.html#property_subject" class="headerlink"><i class="fas fa-link"></i></a>
+
+        <span class="phpdocumentor-element__modifiers">
+                                </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/class/Email.php"><a href="files/src-class-email.html"><abbr title="src/class/Email.php">Email.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">367</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">private</span>
+        <span class="phpdocumentor-signature__type">mixed</span>
+    <span class="phpdocumentor-signature__name">$subject</span>
+    </code>
+
+    
+    
+    
+
+</article>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -private
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="property_text">
+        $text
+        <a href="classes/SendGridMail.html#property_text" class="headerlink"><i class="fas fa-link"></i></a>
+
+        <span class="phpdocumentor-element__modifiers">
+                                </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/class/Email.php"><a href="files/src-class-email.html"><abbr title="src/class/Email.php">Email.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">367</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">private</span>
+        <span class="phpdocumentor-signature__type">mixed</span>
+    <span class="phpdocumentor-signature__name">$text</span>
+    </code>
+
+    
+    
+    
+
+</article>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -private
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="property_to_list">
+        $to_list
+        <a href="classes/SendGridMail.html#property_to_list" class="headerlink"><i class="fas fa-link"></i></a>
+
+        <span class="phpdocumentor-element__modifiers">
+                                </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/class/Email.php"><a href="files/src-class-email.html"><abbr title="src/class/Email.php">Email.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">367</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">private</span>
+        <span class="phpdocumentor-signature__type">mixed</span>
+    <span class="phpdocumentor-signature__name">$to_list</span>
+    </code>
+
+    
+    
+    
+
+</article>
+            </section>
 
             <section class="phpdocumentor-methods">
         <h3 class="phpdocumentor-elements__header" id="methods">
@@ -3317,6 +3834,207 @@ which we have to.</p>
 
     
 </article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -protected
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method__isHeadersRequired">
+        _isHeadersRequired()
+        <a href="classes/SendGridMail.html#method__isHeadersRequired" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/class/Email.php"><a href="files/src-class-email.html"><abbr title="src/class/Email.php">Email.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">1146</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">isHeaderRequired
+determines whether or not we need to force recipients through the smtpapi headers</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">protected</span>
+                    <span class="phpdocumentor-signature__name">_isHeadersRequired</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+    
+
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">bool</span>
+                    &mdash;
+                <section class="phpdocumentor-description"><p>if true headers are required</p>
+</section>
+
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -protected
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method__preferNotToUseHeaders">
+        _preferNotToUseHeaders()
+        <a href="classes/SendGridMail.html#method__preferNotToUseHeaders" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/class/Email.php"><a href="files/src-class-email.html"><abbr title="src/class/Email.php">Email.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">1164</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">_preferNotToUseHeaders
+There are certain cases in which headers are not a preferred choice
+to send email, as it limits some basic email functionality. Here, we
+check for any of those rules, and add them in to decide whether or
+not to use headers</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">protected</span>
+                    <span class="phpdocumentor-signature__name">_preferNotToUseHeaders</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+    
+
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">bool</span>
+                    &mdash;
+                <section class="phpdocumentor-description"><p>if true we don't</p>
+</section>
+
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -private
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method__getAttachmentInfo">
+        _getAttachmentInfo()
+        <a href="classes/SendGridMail.html#method__getAttachmentInfo" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/class/Email.php"><a href="files/src-class-email.html"><abbr title="src/class/Email.php">Email.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">860</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">get file details</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">private</span>
+                    <span class="phpdocumentor-signature__name">_getAttachmentInfo</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$file</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$file</span>
+                : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span>
+                    &mdash;
+                <section class="phpdocumentor-description"><p>with file details</p>
+</section>
+
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -private
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method__removeFromList">
+        _removeFromList()
+        <a href="classes/SendGridMail.html#method__removeFromList" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/class/Email.php"><a href="files/src-class-email.html"><abbr title="src/class/Email.php">Email.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">396</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">_removeFromList
+Given a list of key/value pairs, removes the associated keys
+where a value matches the given string ($item)</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">private</span>
+                    <span class="phpdocumentor-signature__name">_removeFromList</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__reference-operator">&amp;</span><span class="phpdocumentor-signature__argument__name">$list</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$item</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$key_field</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$list</span>
+                : <span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><ul>
+<li>the list of key/value pairs</li>
+</ul>
+</section>
+
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$item</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><ul>
+<li>the value to be removed</li>
+</ul>
+</section>
+
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$key_field</span>
+                : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
+                 = <span class="phpdocumentor-signature__argument__default-value">null</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+    
+</article>
             </section>
 
         <div class="phpdocumentor-modal" id="source-view">
@@ -3422,10 +4140,28 @@ which we have to.</p>
             <li class="phpdocumentor-on-this-page-section__title">Table Of Contents</li>
             <li>
                 <ul class="phpdocumentor-list -clean">
-                                                                                <li><a href="classes/SendGridMail.html#toc-methods">Methods</a></li>
+                                                            <li><a href="classes/SendGridMail.html#toc-properties">Properties</a></li>
+                                                            <li><a href="classes/SendGridMail.html#toc-methods">Methods</a></li>
                                     </ul>
             </li>
             
+                            <li class="phpdocumentor-on-this-page-section__title">Properties</li>
+                <li>
+                    <ul class="phpdocumentor-list -clean">
+                                                    <li><a href="classes/SendGridMail.html#property_use_headers">$use_headers<a href="classes/SendGridMail.html"></li>
+                                                    <li><a href="classes/SendGridMail.html#property_attachment_list">$attachment_list<a href="classes/SendGridMail.html"></li>
+                                                    <li><a href="classes/SendGridMail.html#property_bcc_list">$bcc_list<a href="classes/SendGridMail.html"></li>
+                                                    <li><a href="classes/SendGridMail.html#property_cc_list">$cc_list<a href="classes/SendGridMail.html"></li>
+                                                    <li><a href="classes/SendGridMail.html#property_from">$from<a href="classes/SendGridMail.html"></li>
+                                                    <li><a href="classes/SendGridMail.html#property_from_name">$from_name<a href="classes/SendGridMail.html"></li>
+                                                    <li><a href="classes/SendGridMail.html#property_header_list">$header_list<a href="classes/SendGridMail.html"></li>
+                                                    <li><a href="classes/SendGridMail.html#property_html">$html<a href="classes/SendGridMail.html"></li>
+                                                    <li><a href="classes/SendGridMail.html#property_reply_to">$reply_to<a href="classes/SendGridMail.html"></li>
+                                                    <li><a href="classes/SendGridMail.html#property_subject">$subject<a href="classes/SendGridMail.html"></li>
+                                                    <li><a href="classes/SendGridMail.html#property_text">$text<a href="classes/SendGridMail.html"></li>
+                                                    <li><a href="classes/SendGridMail.html#property_to_list">$to_list<a href="classes/SendGridMail.html"></li>
+                                            </ul>
+                </li>
             
                         <li class="phpdocumentor-on-this-page-section__title">Methods</li>
             <li>
@@ -3482,6 +4218,10 @@ which we have to.</p>
                                             <li><a href="classes/SendGridMail.html#method_setTos">setTos()</a></li>
                                             <li><a href="classes/SendGridMail.html#method_setUniqueArguments">setUniqueArguments()</a></li>
                                             <li><a href="classes/SendGridMail.html#method_useHeaders">useHeaders()</a></li>
+                                            <li><a href="classes/SendGridMail.html#method__isHeadersRequired">_isHeadersRequired()</a></li>
+                                            <li><a href="classes/SendGridMail.html#method__preferNotToUseHeaders">_preferNotToUseHeaders()</a></li>
+                                            <li><a href="classes/SendGridMail.html#method__getAttachmentInfo">_getAttachmentInfo()</a></li>
+                                            <li><a href="classes/SendGridMail.html#method__removeFromList">_removeFromList()</a></li>
                                     </ul>
             </li>
                     </ul>

@@ -1,4 +1,5 @@
-run = "php -S 0.0.0.0:8000 vendor/cloudframework-io/backend-core-php8/src/dispatcher.php"
+#run = "php -S 0.0.0.0:8000 vendor/cloudframework-io/backend-core-php8/src/dispatcher.php"
+run = "php -S 0.0.0.0:8000 -t ."
 
 entrypoint = "index.php"
 
@@ -6,5 +7,6 @@ entrypoint = "index.php"
 channel = "stable-22_11"
 
 [deployment]
-run = ["php", "-S", "0.0.0.0:8000",  "vendor/cloudframework-io/backend-core-php8/src/dispatcher.php"]
+run = ["php", "-S", "0.0.0.0:8000",  "-t","."]
+entrypoint = "index.php"
 deploymentTarget = "cloudrun"

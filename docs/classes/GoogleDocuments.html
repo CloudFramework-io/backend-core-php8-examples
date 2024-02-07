@@ -266,6 +266,42 @@
                         &nbsp;: <abbr title="\Google\Service\Sheets">Sheets</abbr>            </span>
 </dt>
 
+            <dt class="phpdocumentor-table-of-contents__entry -property -protected">
+    <a href="classes/GoogleDrive.html#property_drive">$drive</a>
+    <span>
+                        &nbsp;: <abbr title="\Google\Service\Drive">Drive</abbr>            </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -property -protected">
+    <a href="classes/GoogleDrive.html#property_driveFile">$driveFile</a>
+    <span>
+                        &nbsp;: <abbr title="\Google\Service\Drive\DriveFile">DriveFile</abbr>            </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -property -protected">
+    <a href="classes/GoogleDrive.html#property_drivePermission">$drivePermission</a>
+    <span>
+                        &nbsp;: <abbr title="\Google\Service\Drive\Permission">Permission</abbr>            </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -property -protected">
+    <a href="classes/GoogleDrive.html#property_googleClient">$googleClient</a>
+    <span>
+                        &nbsp;: <abbr title="\Google\Client">Client</abbr>            </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -property -protected">
+    <a href="classes/GoogleDrive.html#property_version">$version</a>
+    <span>
+                        &nbsp;: mixed            </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -property -private">
+    <a href="classes/GoogleDrive.html#property_core">$core</a>
+    <span>
+                        &nbsp;: <a href="classes/Core7.html"><abbr title="\Core7">Core7</abbr></a>            </span>
+</dt>
+
     </dl>
 
 <h4 id="toc-methods">
@@ -533,6 +569,48 @@ The error codes can be: 404 = not found, 403 = insufficient permissions</dd>
 </dt>
 <dd>Call to uploadDriveFile passing $mime_type = application/vnd.google-apps.spreadsheet</dd>
 
+            <dt class="phpdocumentor-table-of-contents__entry -method -protected">
+    <a href="classes/GoogleDrive.html#method_addError">addError()</a>
+    <span>
+                                &nbsp;: mixed    </span>
+</dt>
+<dd>Add an error into the classs</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -protected">
+    <a href="classes/GoogleDrive.html#method_getArrayFromDriveFile">getArrayFromDriveFile()</a>
+    <span>
+                                &nbsp;: array&lt;string|int, mixed&gt;    </span>
+</dt>
+<dd>Return an array structured taking a DriveFile</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -private">
+    <a href="classes/GoogleDrive.html#method_getDriveFolderRecursiveStructure">getDriveFolderRecursiveStructure()</a>
+    <span>
+                                &nbsp;: array&lt;string|int, mixed&gt;    </span>
+</dt>
+<dd>Create under $parent drive folder the structure defined in $structure</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -private">
+    <a href="classes/GoogleDrive.html#method_getGoogleClient">getGoogleClient()</a>
+    <span>
+                                &nbsp;: mixed    </span>
+</dt>
+<dd>Return a Google Client with the scopes necessary to manage Google Documents</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -private">
+    <a href="classes/GoogleDrive.html#method_getUrlFromMimeType">getUrlFromMimeType()</a>
+    <span>
+                                &nbsp;: string    </span>
+</dt>
+<dd>Return the URL to drive object based on $file-&gt;getMimeType();</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -private">
+    <a href="classes/GoogleDrive.html#method_recursiveFolderTree">recursiveFolderTree()</a>
+    <span>
+                                &nbsp;: bool|void    </span>
+</dt>
+<dd>Recursive function to create a tree</dd>
+
     </dl>
 
 
@@ -783,6 +861,212 @@ The error codes can be: 404 = not found, 403 = insufficient permissions</dd>
         <section class="phpdocumentor-description"><p>will manage the drive access properties</p>
 </section>
 
+    
+
+</article>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -protected
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="property_drive">
+        $drive
+        <a href="classes/GoogleDrive.html#property_drive" class="headerlink"><i class="fas fa-link"></i></a>
+
+        <span class="phpdocumentor-element__modifiers">
+                                </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/class/GoogleDocuments.php"><a href="files/src-class-googledocuments.html"><abbr title="src/class/GoogleDocuments.php">GoogleDocuments.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">26</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">protected</span>
+        <span class="phpdocumentor-signature__type"><abbr title="\Google\Service\Drive">Drive</abbr></span>
+    <span class="phpdocumentor-signature__name">$drive</span>
+     = <span class="phpdocumentor-signature__default-value">\null</span></code>
+
+    
+        <section class="phpdocumentor-description"><p>will manage the drive access properties</p>
+</section>
+
+    
+
+</article>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -protected
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="property_driveFile">
+        $driveFile
+        <a href="classes/GoogleDrive.html#property_driveFile" class="headerlink"><i class="fas fa-link"></i></a>
+
+        <span class="phpdocumentor-element__modifiers">
+                                </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/class/GoogleDocuments.php"><a href="files/src-class-googledocuments.html"><abbr title="src/class/GoogleDocuments.php">GoogleDocuments.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">30</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">protected</span>
+        <span class="phpdocumentor-signature__type"><abbr title="\Google\Service\Drive\DriveFile">DriveFile</abbr></span>
+    <span class="phpdocumentor-signature__name">$driveFile</span>
+     = <span class="phpdocumentor-signature__default-value">\null</span></code>
+
+    
+        <section class="phpdocumentor-description"><p>will manage  files in general</p>
+</section>
+
+    
+
+</article>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -protected
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="property_drivePermission">
+        $drivePermission
+        <a href="classes/GoogleDrive.html#property_drivePermission" class="headerlink"><i class="fas fa-link"></i></a>
+
+        <span class="phpdocumentor-element__modifiers">
+                                </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/class/GoogleDocuments.php"><a href="files/src-class-googledocuments.html"><abbr title="src/class/GoogleDocuments.php">GoogleDocuments.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">34</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">protected</span>
+        <span class="phpdocumentor-signature__type"><abbr title="\Google\Service\Drive\Permission">Permission</abbr></span>
+    <span class="phpdocumentor-signature__name">$drivePermission</span>
+     = <span class="phpdocumentor-signature__default-value">\null</span></code>
+
+    
+        <section class="phpdocumentor-description"><p>will manage  files in general</p>
+</section>
+
+    
+
+</article>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -protected
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="property_googleClient">
+        $googleClient
+        <a href="classes/GoogleDrive.html#property_googleClient" class="headerlink"><i class="fas fa-link"></i></a>
+
+        <span class="phpdocumentor-element__modifiers">
+                                </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/class/GoogleDocuments.php"><a href="files/src-class-googledocuments.html"><abbr title="src/class/GoogleDocuments.php">GoogleDocuments.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">23</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">protected</span>
+        <span class="phpdocumentor-signature__type"><abbr title="\Google\Client">Client</abbr></span>
+    <span class="phpdocumentor-signature__name">$googleClient</span>
+     = <span class="phpdocumentor-signature__default-value">\null</span></code>
+
+    
+        <section class="phpdocumentor-description"><p>will manage the drive access properties</p>
+</section>
+
+    
+
+</article>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -protected
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="property_version">
+        $version
+        <a href="classes/GoogleDrive.html#property_version" class="headerlink"><i class="fas fa-link"></i></a>
+
+        <span class="phpdocumentor-element__modifiers">
+                                </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/class/GoogleDocuments.php"><a href="files/src-class-googledocuments.html"><abbr title="src/class/GoogleDocuments.php">GoogleDocuments.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">17</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">protected</span>
+        <span class="phpdocumentor-signature__type">mixed</span>
+    <span class="phpdocumentor-signature__name">$version</span>
+     = <span class="phpdocumentor-signature__default-value">&#039;20230913&#039;</span></code>
+
+    
+    
+    
+
+</article>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -private
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="property_core">
+        $core
+        <a href="classes/GoogleDrive.html#property_core" class="headerlink"><i class="fas fa-link"></i></a>
+
+        <span class="phpdocumentor-element__modifiers">
+                                </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/class/GoogleDocuments.php"><a href="files/src-class-googledocuments.html"><abbr title="src/class/GoogleDocuments.php">GoogleDocuments.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">20</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">private</span>
+        <span class="phpdocumentor-signature__type"><a href="classes/Core7.html"><abbr title="\Core7">Core7</abbr></a></span>
+    <span class="phpdocumentor-signature__name">$core</span>
+    </code>
+
+    
+    
     
 
 </article>
@@ -2640,6 +2924,318 @@ The error codes can be: 404 = not found, 403 = insufficient permissions</p>
 
     
 </article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -protected
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_addError">
+        addError()
+        <a href="classes/GoogleDrive.html#method_addError" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/class/GoogleDocuments.php"><a href="files/src-class-googledocuments.html"><abbr title="src/class/GoogleDocuments.php">GoogleDocuments.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">1041</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Add an error into the classs</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">protected</span>
+                    <span class="phpdocumentor-signature__name">addError</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$code</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type"><a href=""></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$msg</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$code</span>
+                : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$msg</span>
+                : <span class="phpdocumentor-signature__argument__return-type"><a href=""></a></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -protected
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_getArrayFromDriveFile">
+        getArrayFromDriveFile()
+        <a href="classes/GoogleDrive.html#method_getArrayFromDriveFile" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/class/GoogleDocuments.php"><a href="files/src-class-googledocuments.html"><abbr title="src/class/GoogleDocuments.php">GoogleDocuments.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">352</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Return an array structured taking a DriveFile</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">protected</span>
+                    <span class="phpdocumentor-signature__name">getArrayFromDriveFile</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><abbr title="\Google\Service\Drive\DriveFile">DriveFile</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__reference-operator">&amp;</span><span class="phpdocumentor-signature__argument__name">$file</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">bool&nbsp;</span><span class="phpdocumentor-signature__argument__name">$avoid_empty_fields</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">false</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$extra_data</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">[]</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$file</span>
+                : <span class="phpdocumentor-signature__argument__return-type"><abbr title="\Google\Service\Drive\DriveFile">DriveFile</abbr></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$avoid_empty_fields</span>
+                : <span class="phpdocumentor-signature__argument__return-type">bool</span>
+                 = <span class="phpdocumentor-signature__argument__default-value">false</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$extra_data</span>
+                : <span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;</span>
+                 = <span class="phpdocumentor-signature__argument__default-value">[]</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -private
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_getDriveFolderRecursiveStructure">
+        getDriveFolderRecursiveStructure()
+        <a href="classes/GoogleDrive.html#method_getDriveFolderRecursiveStructure" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/class/GoogleDocuments.php"><a href="files/src-class-googledocuments.html"><abbr title="src/class/GoogleDocuments.php">GoogleDocuments.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">427</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Create under $parent drive folder the structure defined in $structure</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">private</span>
+                    <span class="phpdocumentor-signature__name">getDriveFolderRecursiveStructure</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$parent</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$structure</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$parent</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$structure</span>
+                : <span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -private
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_getGoogleClient">
+        getGoogleClient()
+        <a href="classes/GoogleDrive.html#method_getGoogleClient" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/class/GoogleDocuments.php"><a href="files/src-class-googledocuments.html"><abbr title="src/class/GoogleDocuments.php">GoogleDocuments.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">1024</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Return a Google Client with the scopes necessary to manage Google Documents</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">private</span>
+                    <span class="phpdocumentor-signature__name">getGoogleClient</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__reference-operator">&amp;</span><span class="phpdocumentor-signature__argument__name">$config</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$config</span>
+                : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -private
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_getUrlFromMimeType">
+        getUrlFromMimeType()
+        <a href="classes/GoogleDrive.html#method_getUrlFromMimeType" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/class/GoogleDocuments.php"><a href="files/src-class-googledocuments.html"><abbr title="src/class/GoogleDocuments.php">GoogleDocuments.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">658</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Return the URL to drive object based on $file-&gt;getMimeType();</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">private</span>
+                    <span class="phpdocumentor-signature__name">getUrlFromMimeType</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><abbr title="\Google\Service\Drive\DriveFile">DriveFile</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$file</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$file</span>
+                : <span class="phpdocumentor-signature__argument__return-type"><abbr title="\Google\Service\Drive\DriveFile">DriveFile</abbr></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">string</span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -private
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_recursiveFolderTree">
+        recursiveFolderTree()
+        <a href="classes/GoogleDrive.html#method_recursiveFolderTree" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/class/GoogleDocuments.php"><a href="files/src-class-googledocuments.html"><abbr title="src/class/GoogleDocuments.php">GoogleDocuments.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">739</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Recursive function to create a tree</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">private</span>
+                    <span class="phpdocumentor-signature__name">recursiveFolderTree</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href=""></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$parent_id</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type"><a href=""></a>&nbsp;</span><span class="phpdocumentor-signature__argument__reference-operator">&amp;</span><span class="phpdocumentor-signature__argument__name">$folder</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$level</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">0</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool|void</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$parent_id</span>
+                : <span class="phpdocumentor-signature__argument__return-type"><a href=""></a></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$folder</span>
+                : <span class="phpdocumentor-signature__argument__return-type"><a href=""></a></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$level</span>
+                : <span class="phpdocumentor-signature__argument__return-type">int</span>
+                 = <span class="phpdocumentor-signature__argument__default-value">0</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>current level of recursivity. 0 default value</p>
+</section>
+
+            </dd>
+            </dl>
+
+    
+
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">bool|void</span>
+            </section>
+
+</article>
             </section>
 
         <div class="phpdocumentor-modal" id="source-view">
@@ -2760,6 +3356,12 @@ The error codes can be: 404 = not found, 403 = insufficient permissions</p>
                                                     <li><a href="classes/GoogleDrive.html#property_maxRecursiveLevels">$maxRecursiveLevels<a href="classes/GoogleDocuments.html"></li>
                                                     <li><a href="classes/GoogleDrive.html#property_pageToken">$pageToken<a href="classes/GoogleDocuments.html"></li>
                                                     <li><a href="classes/GoogleDocuments.html#property_spreedsheet">$spreedsheet<a href="classes/GoogleDocuments.html"></li>
+                                                    <li><a href="classes/GoogleDrive.html#property_drive">$drive<a href="classes/GoogleDocuments.html"></li>
+                                                    <li><a href="classes/GoogleDrive.html#property_driveFile">$driveFile<a href="classes/GoogleDocuments.html"></li>
+                                                    <li><a href="classes/GoogleDrive.html#property_drivePermission">$drivePermission<a href="classes/GoogleDocuments.html"></li>
+                                                    <li><a href="classes/GoogleDrive.html#property_googleClient">$googleClient<a href="classes/GoogleDocuments.html"></li>
+                                                    <li><a href="classes/GoogleDrive.html#property_version">$version<a href="classes/GoogleDocuments.html"></li>
+                                                    <li><a href="classes/GoogleDrive.html#property_core">$core<a href="classes/GoogleDocuments.html"></li>
                                             </ul>
                 </li>
             
@@ -2796,6 +3398,12 @@ The error codes can be: 404 = not found, 403 = insufficient permissions</p>
                                             <li><a href="classes/GoogleDrive.html#method_uploadDriveFileAsDoc">uploadDriveFileAsDoc()</a></li>
                                             <li><a href="classes/GoogleDrive.html#method_uploadDriveFileAsPresentation">uploadDriveFileAsPresentation()</a></li>
                                             <li><a href="classes/GoogleDrive.html#method_uploadDriveFileAsSpreadSheet">uploadDriveFileAsSpreadSheet()</a></li>
+                                            <li><a href="classes/GoogleDrive.html#method_addError">addError()</a></li>
+                                            <li><a href="classes/GoogleDrive.html#method_getArrayFromDriveFile">getArrayFromDriveFile()</a></li>
+                                            <li><a href="classes/GoogleDrive.html#method_getDriveFolderRecursiveStructure">getDriveFolderRecursiveStructure()</a></li>
+                                            <li><a href="classes/GoogleDrive.html#method_getGoogleClient">getGoogleClient()</a></li>
+                                            <li><a href="classes/GoogleDrive.html#method_getUrlFromMimeType">getUrlFromMimeType()</a></li>
+                                            <li><a href="classes/GoogleDrive.html#method_recursiveFolderTree">recursiveFolderTree()</a></li>
                                     </ul>
             </li>
                     </ul>
